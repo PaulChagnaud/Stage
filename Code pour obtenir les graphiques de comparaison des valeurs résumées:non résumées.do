@@ -98,7 +98,7 @@ graph export /Users/paulchagnaud/StagePaulChagnaud/Valeurs_résumées_VS_Valeurs
 
 *---------------------
 restore
-preserve
+
 
 tab partner_grouping 
 
@@ -106,17 +106,18 @@ drop if partner_grouping == "France"
 
 replace export_import = "Exports" if export_import == "Exportations"
 
-collapse (sum) value, by (base_pas_résumé export_import partner_grouping)
 
-br
+replace partner_grouping = "Outre-mers" if partner_grouping == "Afrique" | partner_grouping == "Asie" | partner_grouping == "Amériques"
+
+
+collapse (sum) value, by (base_pas_résumé export_import partner_grouping)
 
 sort export_import partner_grouping
 
-br 
-
 format value %12.0gc
 
-br
+
+
 
 reshape wide value, i(partner_grouping export_import) j(base_pas_résumé)
 
@@ -124,7 +125,7 @@ gen log_value0 = log(value0)
 
 gen log_value1 = log(value1)
 
-replace partner_grouping = "Outres-mers" if partner_grouping == "Afrique" | partner_grouping == "Asie" | partner_grouping == "Amériques"
+
 
 twoway  (scatter log_value0 log_value1 if export_import=="Imports", mlabel(partner_grouping)) (line log_value0 log_value0), name(graph3, replace)  title("Valeurs résumées VS Valeurs non résumées" " par partenaire (Imports 1789)") legend(off) xtitle(Base non résumée) ytitle(Base résumée)
 
