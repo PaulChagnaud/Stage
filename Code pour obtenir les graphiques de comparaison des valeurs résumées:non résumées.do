@@ -62,6 +62,8 @@ generate base_pas_résumé = 1 if source_type != "Résumé"
 
 replace base_pas_résumé = 0 if source_type == "Résumé"
 
+preserve
+
 tab partner_grouping 
 
 drop if partner_grouping == "France"
@@ -86,17 +88,16 @@ gen log_value0 = log(value0)
 
 gen log_value1 = log(value1)
 
-twoway  (scatter log_value0 log_value1 if export_import=="Imports", mlabel(product_sitc_FR)) (line log_value0 log_value0), name(graph3, replace) title(valeur résumée VS valeur non résumée) legend(off)
+twoway  (scatter log_value0 log_value1 if export_import=="Imports", mlabel(product_sitc_FR)) (line log_value0 log_value0), name(graph3, replace) title("Valeurs résumées VS Valeurs non résumées" " par produit (Imports 1789)") legend(off) xtitle(Base non résumée) ytitle(Base résumée)
 
-twoway  (scatter log_value0 log_value1 if export_import=="Exports", mlabel(product_sitc_FR)) (line log_value0 log_value0), name(graph3, replace) title(valeur résumée VS valeur non résumée) legend(off)
+graph export /Users/paulchagnaud/StagePaulChagnaud/Valeurs_résumées_VS_Valeurs_non_résumées_par_produit_Imports_1789.png
 
-import delimited "/Users/paulchagnaud/Desktop/bdd courante.csv", clear  case(preserve)
+twoway  (scatter log_value0 log_value1 if export_import=="Exports", mlabel(product_sitc_FR)) (line log_value0 log_value0), name(graph3, replace)  title("Valeurs résumées VS Valeurs non résumées" " par produit (Exports 1789)") legend(off) xtitle(Base non résumée) ytitle(Base résumée)
 
-keep if year == 1789
+graph export /Users/paulchagnaud/StagePaulChagnaud/Valeurs_résumées_VS_Valeurs_non_résumées_par_partenaire_Exports_1789.png
 
-generate base_pas_résumé = 1 if source_type != "Résumé"
-
-replace base_pas_résumé = 0 if source_type == "Résumé"
+*---------------------
+restore
 
 tab partner_grouping 
 
@@ -122,7 +123,16 @@ gen log_value0 = log(value0)
 
 gen log_value1 = log(value1)
 
-twoway  (scatter log_value0 log_value1 if export_import=="Imports", mlabel(partner_grouping)) (line log_value0 log_value0), name(graph3, replace) title(valeur résumée VS valeur non résumée) legend(off)
+replace partner_grouping == "Outres-mers" if partner_grouping == "Afrique" | partner_grouping == "Asie" | partner_grouping == "Amériques"
 
-twoway  (scatter log_value0 log_value1 if export_import=="Exports", mlabel(partner_grouping)) (line log_value0 log_value0), name(graph3, replace) title(valeur résumée VS valeur non résumée) legend(off)
+twoway  (scatter log_value0 log_value1 if export_import=="Imports", mlabel(partner_grouping)) (line log_value0 log_value0), name(graph3, replace)  title("Valeurs résumées VS Valeurs non résumées" " par partenaire (Imports 1789)") legend(off) xtitle(Base non résumée) ytitle(Base résumée)
+
+graph export /Users/paulchagnaud/StagePaulChagnaud/Valeurs_résumées_VS_Valeurs_non_résumées_par_partenaire_Imports_1789.png
+
+twoway  (scatter log_value0 log_value1 if export_import=="Exports", mlabel(partner_grouping)) (line log_value0 log_value0), name(graph3, replace) title("Valeurs résumées VS Valeurs non résumées" " par partenaire (Exports 1789)") legend(off) xtitle(Base non résumée) ytitle(Base résumée)
+
+graph export /Users/paulchagnaud/StagePaulChagnaud/Valeurs_résumées_VS_Valeurs_non_résumées_par_partenaire_Exports_1789.png
+
+ ,jhljkhl
+
 
