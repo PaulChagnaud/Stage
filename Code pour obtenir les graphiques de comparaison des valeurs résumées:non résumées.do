@@ -151,7 +151,7 @@ generate base_pas_résumé = 1 if source_type != "Résumé"
 
 replace base_pas_résumé = 0 if source_type == "Résumé"
 
-preserve
+
 
 tab partner_grouping 
 
@@ -161,7 +161,7 @@ replace export_import = "Exports" if export_import == "Exportations"
 
 gen part_x_prod = partner_grouping + " " + product_sitc_FR
 
-collapse (sum) value, by (base_pas_résumé export_import  part_x_prod)
+collapse (sum) value, by (base_pas_résumé export_import  part_x_prod product_sitc_FR partner_grouping)
 
 sort export_import part_x_prod
 
@@ -190,8 +190,12 @@ graph export "$dir/Valeurs_résumées_VS_Valeurs_non_résumées_par_partenaire_e
 * À présent nous calculons la différence entre les valeurs des produits par partenaire commercial provenant de la source : Résumé et des autres sources. Puis nous établirons un classement des produits par partenaire commercial pour lesquels la différence de valeurs entre les deux sources est la plus élevée. *  
 
 gen diff_value = log_value0-log_value1
-gsort - diff_value
-list in 1/10
+gen sort = abs(diff_value)
+gsort - sort
+
+format value* %15.0fc
+
+br if product_sitc_FR !="Produits agricoles alimentaires des régions de colonisation européenne"
 
 
 br
