@@ -1,4 +1,4 @@
-* Nous tentons d'identifier quels sont les produits pour lesquels les valeurs des exportations/importations diffèrent d'une base de donnée à l'autre. Ceci va nous permettre d'identifier ainsi que de quantifier les erreurs dans la retranscriptions des données concernant la valeurs des exportations et par importations. Pour cela nous comparons les valeurs des exportations et des importations provenant d'une source résumée et celles provenant d'une source non résumées. * 
+* Nous tentons d'identifier quels sont les produits pour lesquels les valeurs des exportations/importations diffèrent d'une base de donnée à l'autre. Ceci va nous permettre d'identifier ainsi que de quantifier les erreurs dans la retranscriptions des données concernant la valeurs des exportations et des importations. Pour cela nous comparons les valeurs des exportations et des importations provenant d'une source résumée et celles provenant d'une source non résumées. * 
 
 if  "`c(username)'" == "paulchagnaud" import delimited "/Users/paulchagnaud/Desktop/bdd courante.csv", clear  case(preserve)
 if  "`c(username)'" == "guillaumedaudin" use "~/Documents/Recherche/Commerce International Français XVIIIe.xls/Balance du commerce/Retranscriptions_Commerce_France/Données Stata/bdd courante.dta", clear
@@ -183,7 +183,7 @@ format value* %15.0fc
 
 br if product_sitc_FR !="Produits agricoles alimentaires des régions de colonisation européenne"
 
-br
+br if product_sitc_FR !="Produits agricoles alimentaires des régions de colonisation européenne" & partner_grouping=="Espagne"
 
 * Le classement des 10 produits par partenaire commercial pour lesquels la différence des valeurs entre les deux sources est la plus importante est le suivant *
 
