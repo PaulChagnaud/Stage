@@ -197,6 +197,7 @@ format value* %15.0fc
 
 br if product_sitc_FR !="Produits agricoles alimentaires des régions de colonisation européenne"
 
+br if product_sitc_FR !="Produits agricoles alimentaires des régions de colonisation européenne" & partner_grouping=="Espagne"
 
 br
 
