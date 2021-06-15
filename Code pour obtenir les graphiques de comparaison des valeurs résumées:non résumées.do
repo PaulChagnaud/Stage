@@ -195,8 +195,6 @@ list diff_value part_x_prod in 1/10
 
 br 
 
-
-
 * Le classement des 10 produits par partenaire commercial pour lesquels la différence des log des valeurs en valeur absolue entre les deux sources est la plus importante est le suivant *
 
 gsort -diff_value_abs
