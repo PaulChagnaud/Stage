@@ -122,8 +122,7 @@ tab partner_grouping
 drop if partner_grouping == "France"
 replace export_import = "Exports" if export_import == "Exportations"
 gen part_x_prod = partner_grouping + " " + product_sitc_FR
-collapse (sum) value, by (base_pas_résumé export_import  part_x_prod
-product_sitc_FR partner_grouping)
+collapse (sum) value, by (base_pas_résumé export_import  part_x_prod product_sitc_FR partner_grouping)
 sort export_import part_x_prod
 format value %12.0gc
 reshape wide value, i(export_import part_x_prod) j(base_pas_résumé)
@@ -171,6 +170,7 @@ br
 ## Classement des 10 produits par partenaire commercial pour lesquels la différence des log des valeurs en valeur absolue entre les deux sources est la plus importante
 
 <<dd_do>>
+gen diff_value_abs =abs(value0-value1)
 gsort -diff_value_abs
 list diff_value_abs part_x_prod in 1/10 
 <</dd_do>>
