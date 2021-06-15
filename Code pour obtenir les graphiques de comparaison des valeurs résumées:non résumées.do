@@ -155,12 +155,9 @@ format value* %15.0fc
 
 br if product_sitc_FR !="Produits agricoles alimentaires des régions de colonisation européenne"
 
-<<<<<<< HEAD
-=======
+
 br if product_sitc_FR !="Produits agricoles alimentaires des régions de colonisation européenne" & partner_grouping=="Espagne"
 
->>>>>>> 0cead1ff4ffaffbaa26240740cc3d8ea4480771e
-br
 
 * Classement des 10 produits par partenaire commercial pour lesquels la différence des log des valeurs entre les deux sources est la plus importante *
 
