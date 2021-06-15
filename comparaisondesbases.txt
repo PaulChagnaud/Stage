@@ -11,7 +11,7 @@ Comparaison selon la nature des produits importés/exportés
 Nous tentons d'identifier quels sont les produits pour lesquels les valeurs des exportations/importations diffèrent d'une base de donnée à l'autre. Ceci va nous permettre d'identifier ainsi que de quantifier les erreurs dans la retranscriptions des données concernant la valeurs des exportations et des importations. Pour cela nous comparons les valeurs des exportations et des importations provenant d'une source résumée et celles provenant d'une source non résumées.
 
 <<dd_do>>
-if  "`c(username)'" == "paulchagnaud" import delimited "/Users/paulchagnaud/Desktop/bdd courante.csv", clear  case(preserve)
+if  "`c(username)'" == "paulchagnaud" use "/Users/paulchagnaud/Desktop/bdd courante.dta", clear
 if  "`c(username)'" == "guillaumedaudin" use "~/Documents/Recherche/Commerce International Français XVIIIe.xls/Balance du commerce/Retranscriptions_Commerce_France/Données Stata/bdd courante.dta", clear
 
 if  "`c(username)'" == "guillaumedaudin" global dir "~/Répertoires Git/StagePaulChagnaud"
@@ -24,16 +24,12 @@ Nous nous intéressons uniquement aux observations de l'année 1789 et nous choi
 keep if year == 1789
 generate base_pas_résumé = 1 if source_type != "Résumé"
 replace base_pas_résumé = 0 if source_type == "Résumé"
-preserve
 tab partner_grouping 
 drop if partner_grouping == "France"
 replace export_import = "Exports" if export_import == "Exportations"
 collapse (sum) value, by (base_pas_résumé export_import product_sitc_FR)
-br
 sort export_import product_sitc_FR
-br 
 format value %12.0gc
-br
 reshape wide value, i(product_sitc_FR export_import) j(base_pas_résumé)
 gen log_value0 = log(value0)
 gen log_value1 = log(value1)
@@ -42,7 +38,7 @@ gen log_value1 = log(value1)
 # Représentation graphique concernant les importations 
 
 <<dd_do:nooutput>>
-twoway  (scatter log_value0 log_value1 if export_import=="Imports", mlabel(product_sitc_FR)) (line log_value0 log_value0), name(graph3, replace) title("Valeurs résumées VS Valeurs non résumées" " par produit (Imports 1789)") legend(off) xtitle(Source : autre) ytitle(Sources : Résumés) xscale(range(12 20))
+twoway  (scatter log_value0 log_value1 if export_import=="Imports" & log_value0!=., mlabel(product_sitc_FR)) (line log_value0 log_value0), name(graph3, replace) title("Valeurs résumées VS Valeurs non résumées" " par produit (Imports 1789)") legend(off) xtitle(Source : autre) ytitle(Sources : Résumés) xscale(range(12 20))
 graph export "$dir/Valeurs_résumées_VS_Valeurs_non_résumées_par_produit_Imports_1789.png", replace
 <</dd_do>>
 
@@ -53,7 +49,7 @@ Nous constatons que les différentes sources ne semblent pas concorder sur la va
 # Représentation graphique concernant les exportations 
 
 <<dd_do:nooutput>>
-twoway  (scatter log_value0 log_value1 if export_import=="Exports", mlabel(product_sitc_FR)) (line log_value0 log_value0), name(graph3, replace)  title("Valeurs résumées VS Valeurs non résumées" " par produit (Exports 1789)") legend(off) xtitle(Sources : autres) ytitle(Source Résumé) xscale(range(12 20))
+twoway  (scatter log_value0 log_value1 if export_import=="Exports" & log_value0!=., mlabel(product_sitc_FR)) (line log_value0 log_value0), name(graph3, replace)  title("Valeurs résumées VS Valeurs non résumées" " par produit (Exports 1789)") legend(off) xtitle(Sources : autres) ytitle(Source Résumé) xscale(range(12 20))
 graph export "$dir/Valeurs_résumées_VS_Valeurs_non_résumées_par_produit_Exports_1789.png", replace
 <</dd_do>>
 
@@ -69,11 +65,19 @@ Nous tentons d'identifier quels sont les partenaires commerciaux pour lesquels l
 Nous nous intéressons uniquement aux observations de l'année 1789 et nous choisissons d'exclure les observations pour lesquels la France est un partenaire commercial. De plus, nous choisissons d'exclure les observations pour lesquels les produits importés sont des "Monnaies et métaux précieux" puisque ce type de bien ne peut être comptabilisé comme faisant parti des échanges commerciaux entre deux pays. 
 
 <<dd_do>>
-restore
+
+
+if  "`c(username)'" == "paulchagnaud" use "/Users/paulchagnaud/Desktop/bdd courante.dta", clear
+if  "`c(username)'" == "guillaumedaudin" use "~/Documents/Recherche/Commerce International Français XVIIIe.xls/Balance du commerce/Retranscriptions_Commerce_France/Données Stata/bdd courante.dta", clear
+keep if year == 1789
+generate base_pas_résumé = 1 if source_type != "Résumé"
+replace base_pas_résumé = 0 if source_type == "Résumé"
 tab partner_grouping 
 drop if partner_grouping == "France"
-drop if product_sitc_FR == "Monnaies et métaux précieux"
 replace export_import = "Exports" if export_import == "Exportations"
+
+tab partner_grouping 
+drop if product_sitc_FR == "Monnaies et métaux précieux"
 replace partner_grouping = "Outre-mers" if partner_grouping == "Afrique" | partner_grouping == "Asie" | partner_grouping == "Amériques"
 collapse (sum) value, by (base_pas_résumé export_import partner_grouping)
 sort export_import partner_grouping
@@ -113,8 +117,10 @@ Nous tentons d'identifier quels sont les produits par partenaire commercial pour
 Nous décidons de nous intéresser uniquement aux observations de l'année 1789 et nous choisissons d'exclure les observations pour lesquels la France est un partenaire commercial. 
 
 <<dd_do>>
-if  "`c(username)'" == "paulchagnaud" import delimited "/Users/paulchagnaud/Desktop/bdd courante.csv", clear  case(preserve)
+if  "`c(username)'" == "paulchagnaud" use  "/Users/paulchagnaud/Desktop/bdd courante.dta", clear
 if  "`c(username)'" == "guillaumedaudin" use "~/Documents/Recherche/Commerce International Français XVIIIe.xls/Balance du commerce/Retranscriptions_Commerce_France/Données Stata/bdd courante.dta", clear
+
+replace export_import = "Exports" if export_import == "Exportations"
 keep if year == 1789
 generate base_pas_résumé = 1 if source_type != "Résumé"
 replace base_pas_résumé = 0 if source_type == "Résumé"
