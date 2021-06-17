@@ -170,16 +170,16 @@ format *value* %15.2fc
 br if product_sitc !="0b" 
 br if product_sitc !="0b" & partner_grouping=="Espagne" 
 gsort -diff_value_log_abs
-
 <</dd_do>>
 ~~~~
 
 <<dd_do:nocommand>>
-list product_sitc_FR partner_grouping export_import diff_value_log in 1/20, table string(12) clean 
-la var product_sitc_FR "Produits"
-la var partner_grouping "Partenaire"
-la var export_import "X/M"
-la var diff_value_log "Différence en log"
+label variable product_sitc_FR "Produits"
+label variable partner_grouping "Partenaire"
+label variable export_import "X/M"
+label variable diff_value_log "Différence en log"
+list product_sitc_FR partner_grouping export_import diff_value_log in 1/20, tabl string(12) clean 
+
 <</dd_do>>
 
 #### Classement des 10 produits par partenaire commercial pour lesquels la différence des valeurs (en v.a.) entre les deux sources est la plus importante
@@ -187,19 +187,19 @@ la var diff_value_log "Différence en log"
 <<dd_do:quietly>>
 gen diff_value_abs =abs(value0-value1) if product_sitc !="0b"
 gen diff_value =value0-value1 if product_sitc !="0b"
-gsort -diff_value_abs
 format *value* %15.2fc
+gsort -diff_value_abs
 <</dd_do>>
-~~~~
 
 <<dd_do:nocommand>>
-list product_sitc_FR partner_grouping export_import diff_value diff_value_log in 1/20, table  string(12) clean 
-la var product_sitc_FR "Produits"
-la var partner_grouping "Partenaire"
-la var export_import "X/M"
-la var diff_value_log "Différence en log"
-la var diff_value "Différence"
+label variable product_sitc_FR "Produits"
+label variable partner_grouping "Partenaire"
+label variable export_import "X/M"
+label variable diff_value_log "Différence en log"
+label variable diff_value "Différence"
+list product_sitc_FR partner_grouping export_import diff_value diff_value_log in 1/20, tabl  string(12) clean 
 <</dd_do>>
+
 
 
 
