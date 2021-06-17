@@ -128,8 +128,8 @@ replace base_pas_résumé = 0 if source_type == "Résumé"
 tab partner_grouping 
 drop if partner_grouping == "France"
 replace export_import = "Exports" if export_import == "Exportations"
-gen part_x_prod = partner_grouping + " " + product_sitc
-collapse (sum) value, by (base_pas_résumé export_import  part_x_prod product_sitc partner_grouping)
+gen part_x_prod = product_sitc + " " + partner_grouping
+collapse (sum) value, by (base_pas_résumé export_import  part_x_prod product_sitc partner_grouping product_sitc_FR)
 sort export_import part_x_prod
 format value %12.0gc
 reshape wide value, i(export_import part_x_prod) j(base_pas_résumé)
@@ -183,8 +183,10 @@ gen diff_value =value0-value1 if product_sitc !="0b"
 format *value* %15.0fc
 gsort -diff_value_abs
 <</dd_do>>
-<<dd_do>>
-list diff_value part_x_prod export_import in 1/20 
+~~~~
+
+<<dd_do:nocommand>>
+list  product_sitc_FR partner_grouping export_import diff_value in 1/20, tabl  string(12) clean
 <</dd_do>>
 
 
