@@ -165,64 +165,41 @@ graph export "$dir/Valeurs_résumées_VS_Valeurs_non_résumées_par_partenaire_e
 <<dd_do:quietly>>
 gen diff_value_log = log_value0-log_value1
 gen diff_value_log_abs = abs(diff_value_log)
-<<<<<<< HEAD
 gsort -diff_value_log_abs
 format *value* %15.2fc
 br if product_sitc !="0b" 
 br if product_sitc !="0b" & partner_grouping=="Espagne" 
 gsort -diff_value_log_abs
-=======
-gsort - diff_value_log_abs
-format *value* %15.2fc
-br if product_sitc !="0b"
-br if product_sitc !="0b" & partner_grouping=="Espagne"
-gsort -diff_value_log 
->>>>>>> 6a34e8076b7ea470fa1ebd432d3b1bc761a488f8
+
 <</dd_do>>
 ~~~~
 
 <<dd_do:nocommand>>
-rename product_sitc Produits
-rename partner_grouping Partenaires
-rename export_import X_ou_M
-rename diff_value_log Différence_en_log
-list Produits Partenaire X_ou_M Différence_en_log in 1/20, table string(12) clean  
+list product_sitc_FR partner_grouping export_import diff_value_log in 1/20, table string(12) clean 
+la var product_sitc_FR "Produits"
+la var partner_grouping "Partenaire"
+la var export_import "X/M"
+la var diff_value_log "Différence en log"
 <</dd_do>>
 
 #### Classement des 10 produits par partenaire commercial pour lesquels la différence des valeurs (en v.a.) entre les deux sources est la plus importante
 
 <<dd_do:quietly>>
-<<<<<<< HEAD
-gen diff_value_abs =abs(value0-value1) 
-gen diff_value = value0-value1  
-format *value* %15.2fc 
-br if product_sitc !="0b" 
-br if product_sitc !="0b"
-gsort -diff_value_abs
-<</dd_do>>
-
-~~~~
-
-<<dd_do:nocommand>>
-rename diff_value Différence 
-list Produits Partenaire X_ou_M Différence Différence_en_log in 1/20, table string(12) clean  
-=======
 gen diff_value_abs =abs(value0-value1) if product_sitc !="0b"
 gen diff_value =value0-value1 if product_sitc !="0b"
-format *value* %15.0fc
 gsort -diff_value_abs
+format *value* %15.2fc
 <</dd_do>>
 ~~~~
 
 <<dd_do:nocommand>>
-list  product_sitc_FR partner_grouping export_import diff_value in 1/20, tabl  string(12) clean
->>>>>>> 6a34e8076b7ea470fa1ebd432d3b1bc761a488f8
+list product_sitc_FR partner_grouping export_import diff_value diff_value_log in 1/20, table  string(12) clean 
+la var product_sitc_FR "Produits"
+la var partner_grouping "Partenaire"
+la var export_import "X/M"
+la var diff_value_log "Différence en log"
+la var diff_value "Différence"
 <</dd_do>>
-
-
-
-
-
 
 
 
