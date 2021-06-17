@@ -128,8 +128,8 @@ replace base_pas_résumé = 0 if source_type == "Résumé"
 tab partner_grouping 
 drop if partner_grouping == "France"
 replace export_import = "Exports" if export_import == "Exportations"
-gen part_x_prod = partner_grouping + " " + product_sitc_FR
-collapse (sum) value, by (base_pas_résumé export_import  part_x_prod product_sitc_FR partner_grouping)
+gen part_x_prod = product_sitc + " " + partner_grouping
+collapse (sum) value, by (base_pas_résumé export_import  part_x_prod product_sitc partner_grouping product_sitc_FR)
 sort export_import part_x_prod
 format value %12.0gc
 reshape wide value, i(export_import part_x_prod) j(base_pas_résumé)
@@ -160,30 +160,50 @@ graph export "$dir/Valeurs_résumées_VS_Valeurs_non_résumées_par_partenaire_e
 
 À présent nous calculons la différence entre les valeurs des produits par partenaire commercial provenant de la source : Résumé et des autres sources. Puis nous établissons un classement des produits par partenaire commercial pour lesquels la différence de valeurs entre les deux sources est la plus élevée. 
 
-#### Classement des 10 produits par partenaire commercial pour lesquels la différence des log des valeurs entre les deux sources est la plus importante
+#### Classement des 10 produits par partenaire commercial pour lesquels la différence des log des valeurs (en v.a.) entre les deux sources est la plus importante
 
 <<dd_do:quietly>>
 gen diff_value_log = log_value0-log_value1
 gen diff_value_log_abs = abs(diff_value_log)
-gsort - diff_value_log_abs
-format value* %15.0fc
-br if product_sitc_FR !="Produits agricoles alimentaires des régions de colonisation européenne"
-br if product_sitc_FR !="Produits agricoles alimentaires des régions de colonisation européenne" & partner_grouping=="Espagne"
-gsort -diff_value_log 
+gsort -diff_value_log_abs
+format *value* %15.2fc
+br if product_sitc !="0b" 
+br if product_sitc !="0b" & partner_grouping=="Espagne" 
+gsort -diff_value_log_abs
 <</dd_do>>
-<<dd_do>>
-list diff_value_log part_x_prod in 1/10
+~~~~
+
+<<dd_do:nocommand>>
+rename product_sitc Produits
+rename partner_grouping Partenaires
+rename export_import X_ou_M
+rename diff_value_log Différence_en_log
+list Produits Partenaire X_ou_M Différence_en_log in 1/20, table string(12) clean  
 <</dd_do>>
 
-#### Classement des 10 produits par partenaire commercial pour lesquels la différence des log des valeurs en valeur absolue entre les deux sources est la plus importante
+#### Classement des 10 produits par partenaire commercial pour lesquels la différence des valeurs (en v.a.) entre les deux sources est la plus importante
 
 <<dd_do:quietly>>
-gen diff_value_abs =abs(value0-value1)
+gen diff_value_abs =abs(value0-value1) 
+gen diff_value = value0-value1  
+format *value* %15.2fc 
+br if product_sitc !="0b" 
+br if product_sitc !="0b"
 gsort -diff_value_abs
 <</dd_do>>
-<<dd_do>>
-list diff_value_abs part_x_prod in 1/10 
+
+~~~~
+
+<<dd_do:nocommand>>
+rename diff_value Différence 
+list Produits Partenaire X_ou_M Différence Différence_en_log in 1/20, table string(12) clean  
 <</dd_do>>
+
+
+
+
+
+
 
 
 
