@@ -1,32 +1,94 @@
-<h1><a href="#rapport-sur-les-comparaisons-des-bases-de-données-non-résumées-et-le-résumé" id="rapport-sur-les-comparaisons-des-bases-de-données-non-résumées-et-le-résumé">Rapport sur les comparaisons des bases de données non résumées et le résumé</a></h1>
-<p>Nous disposons de différentes sources sur les données du commerce au XVIII ème siècle et nous essayons de tester leur robustesse en les comparant entre elles.</p>
+<h1><a href="#rapport-sur-les-comparaisons-des-sources-sur-le-commerce-extérieur-de-la-france-de-1789" id="rapport-sur-les-comparaisons-des-sources-sur-le-commerce-extérieur-de-la-france-de-1789">Rapport sur les comparaisons des sources sur le commerce extérieur de la France de 1789</a></h1>
+<p>Nous disposons de différentes sources sur les données du commerce au XVIIIe siècle et nous essayons de tester leur robustesse en les comparant entre elles.</p>
+<p>Ce processus automatisé permet d&rsquo;explorer les différences dans les chiffres sur le commerce de 1789 donnés par différentes sources (le « Résumé » se trouvant aux Archives Nationales à la cote F12 251 et des sources dispersée, souvent plus précises, aux Archives Nationales aux cotes F12 1666 et 1667 et aux Archives Nationales d&rsquo;Outre-Mer à la cote Col F 2B 14).</p>
+<p>Nous tentons d&rsquo;identifier quels sont les produits pour lesquels les valeurs des exportations/importations diffèrent du « Résumé » aux autres sources. Ceci va nous permettre d&rsquo;identifier et de quantifier les erreurs dans la retranscriptions et la classification des données concernant la valeurs des exportations et des importations. Pour cela nous comparons les valeurs des exportations et des importations provenant du « Résumé » et celles provenant d&rsquo;autres sources.</p>
+<p>Un simple calcul sur l’ensemble des données montre que les exportations sont plus importantes d’après le Résume (de plus de 40 millions de livres tournois, ou moins de 10%) et les importations plus faibles (d’à peu près de la même somme).</p>
+<pre><code>. list
+
+     +-------------------------------------+
+     |  X_ou_M        Autres        Résumé |
+     |-------------------------------------|
+  1. | Exports   441,148,000   484,726,286 |
+  2. | Imports   636,524,000   599,484,215 |
+     +-------------------------------------+
+
+</code></pre>
+<p>Cela peut s’expliquer par deux choses : - Les &ldquo;Autres&rdquo; sources rapportent des flux de commerce entre les ports francs (Bayonne, Dunkerque, Marseille, Petits Îles, etc.) et le reste du Royaume, ce que ne fait pas le Résumé. - Au mois de juin 2021, certaines des autres sources ne sont pas retranscrites (importations des directions de ferme d’Amiens, Bayonne, Besançon, Châlons et &ldquo;Arles, Penne et Septemes&rdquo;)</p>
+<p>Nous excluons donc le commerce entre ports français en métropole et reprendrons l’analyse une fois les dernières sources intégrées à la base.</p>
+<p>L’exclusion du commerce intra-français réduit l’écart pour les exports, mais l’augmente pour les importations.</p>
+<pre><code>. list
+
+     +-------------------------------------+
+     |  X_ou_M        Autres        Résumé |
+     |-------------------------------------|
+  1. | Exports   441,148,000   422,917,362 |
+  2. | Imports   636,524,000   558,141,312 |
+     +-------------------------------------+
+
+</code></pre>
+<p>Pour aller plus loin dans l’analyse, nous allons commencer par comparer le commerce par produit, puis celui par partenaires avant de croiser les deux critères.</p>
 <h2><a href="#comparaison-selon-la-nature-des-produits-importésexportés" id="comparaison-selon-la-nature-des-produits-importésexportés">Comparaison selon la nature des produits importés/exportés</a></h2>
-<p>Nous tentons d&rsquo;identifier quels sont les produits pour lesquels les valeurs des exportations/importations diffèrent d&rsquo;une base de donnée à l&rsquo;autre. Ceci va nous permettre d&rsquo;identifier ainsi que de quantifier les erreurs dans la retranscriptions des données concernant la valeurs des exportations et des importations. Pour cela nous comparons les valeurs des exportations et des importations provenant d&rsquo;une source résumée et celles provenant d&rsquo;une source non résumées.</p>
-<p>Nous nous intéressons uniquement aux observations de l&rsquo;année 1789 et nous choisissons d&rsquo;exclure les observations pour lesquels la France est un partenaire commercial.</p>
 <h3><a href="#représentation-graphique-concernant-les-importations" id="représentation-graphique-concernant-les-importations">Représentation graphique concernant les importations</a></h3>
+<p>Ce graphique, comme les suivants, compare le logarithme de la valeur des flux selon chaque source. L’écart à la bissectrice peut donc s’interpréter comme une variation en pourcentage.</p>
 <p><img src="Graph.svg" ></p>
-<p>Nous constatons que les différentes sources ne semblent pas concorder sur la valeur des importations de nombreux produits. Ceci est particulièrement vrai pour les &ldquo;Monnaies et métaux précieux&rdquo; ou encore pour les &ldquo;Produits du bois, liège, jonc&rdquo;.</p>
+<pre><code>. list product_sitc product_sitc_FR if export_import==&quot;Imports&quot;
+
+     +--------------------------------------------------------------------------------------+
+     | produc~c                                                             product_sitc_FR |
+     |--------------------------------------------------------------------------------------|
+  2. |       0a                                     Autres produits alimentaires et animaux |
+  4. |       0b      Produits agricoles alimentaires des régions de colonisation européenne |
+  5. |        1                                                           Boissons et tabac |
+  8. |        2                     Matières brutes non-comestibles non transformées n.d.a. |
+ 10. |        3                                                                Combustibles |
+     |--------------------------------------------------------------------------------------|
+ 11. |        4                     Huiles, graisses et cires d'origine animale et végétale |
+ 14. |        5                                       Produits chimiques transformés n.d.a. |
+ 16. |       6a                              Cuirs, peaux et produits dérivés hors sellerie |
+ 17. |       6b                                               Produits du bois, liège, jonc |
+ 19. |       6c                                                                      Papier |
+     |--------------------------------------------------------------------------------------|
+ 22. |       6d   Filés ou tissés de fibre végétale non mélangée (lin, chanvre, jute, etc.) |
+ 23. |       6e                                         Filés ou tissés de laine et de poil |
+ 25. |       6f                                    Filés ou tissés de soie et soie mélangée |
+ 28. |       6g                                                    Filés ou tissés de coton |
+ 30. |       6h             Autres filés ou tissés mélangés de fibres végétales dont toiles |
+     |--------------------------------------------------------------------------------------|
+ 32. |       6i                                                      Autres filés ou tissés |
+ 34. |       6j                                      Métaux, produits métalliques et outils |
+ 36. |       6k                      Articles minéraux non métalliques manufacturés, n.d.a. |
+ 37. |        7                          Machines et moyens de transport y compris sellerie |
+ 39. |        8                                          Articles manufacturés divers n.d.a |
+     |--------------------------------------------------------------------------------------|
+ 41. |       9a                                                 Monnaies et métaux précieux |
+ 43. |       9b                                                             Divers mélangés |
+ 45. |       9c                                               Divers incertains et inconnus |
+     +--------------------------------------------------------------------------------------+
+
+</code></pre>
+<p>Nous constatons que les différentes sources ne semblent pas concorder sur la valeur des importations de nombreux produits. Cependant, il s’agit rarement de produits ayant un commerce considérable (haut et droite du graphique), à part pour les &ldquo;Monnaies et métaux précieux (9a)&rdquo;. En effet, le Résumé ne rapporte pas une importation de 55 millions de livres tournois de numéraire en provenance de l’Espagne. D’autres différences, notamment entre les produits textiles, viennent sans doute de difficulté de classification. Les sources n’indiquent bien sûr pas les catégories &ldquo;SITC18&rdquo; des produits et nous avons donc les construire nous-mêmes.</p>
 <h3><a href="#représentation-graphique-concernant-les-exportations" id="représentation-graphique-concernant-les-exportations">Représentation graphique concernant les exportations</a></h3>
 <p><img src="Graph1.svg" ></p>
-<p>Malgré une légère amélioration par rapport aux importations, nous constatons que les différentes sources ne semblent pas concorder sur la valeur des exportations de nombreux produits. Ceci est particulièrement vrai pour les &ldquo;Filés ou tissés de fibre végétale non mélangés&rdquo; ou encore pour les &ldquo;Autres filés ou tissés mélangés de fibre végétales dont toiles&rdquo;.</p>
+<p>Malgré une amélioration par rapport aux importations, nous constatons que les différentes sources ne semblent pas concorder sur la valeur des exportations de nombreux produits. C’est surtout vrai cependant pour des flux de moindre importance, à part la différence pour les &ldquo;Filés ou tissés de fibre végétale non mélangés (6d)&rdquo; et les &ldquo;Autres filés ou tissés mélangés de fibre végétales dont toiles (6h)&rdquo;. La distinction entre les deux catégories est parfois difficile à opérer à partir des indications des sources.</p>
 <h2><a href="#comparaison-selon-les-partenaires" id="comparaison-selon-les-partenaires">Comparaison selon les partenaires</a></h2>
-<p>Nous tentons d&rsquo;identifier quels sont les partenaires commerciaux pour lesquels les valeurs des exportations/importations diffèrent d&rsquo;une base de donnée à l&rsquo;autre. Ceci va nous permettre d&rsquo;identifier ainsi que de quantifier les erreurs dans la retranscriptions des données concernant la valeurs des exportations et par importations. Pour cela nous comparons les valeurs des exportations et des importations provenant d&rsquo;une source résumée et celles provenant d&rsquo;une source non résumées.</p>
-<p>Nous nous intéressons uniquement aux observations de l&rsquo;année 1789 et nous choisissons d&rsquo;exclure les observations pour lesquels la France est un partenaire commercial. De plus, nous choisissons d&rsquo;exclure les observations pour lesquels les produits importés sont des &ldquo;Monnaies et métaux précieux&rdquo; puisque ce type de bien ne peut être comptabilisé comme faisant parti des échanges commerciaux entre deux pays.</p>
+<p>Nous tentons d&rsquo;identifier quels sont les partenaires commerciaux pour lesquels les valeurs des exportations/importations diffèrent du « Résumé » aux autres sources. Comme précédemment, nous excluons le commerce avec la France. Nous excluons aussi le commerce de &ldquo;Monnaies et métaux précieux (9a)&rdquo; puisque le Résumé semble ne pas les rapporter.</p>
+<p>Le &ldquo;Résumé&rdquo; mêle l’Asie (hors l’empire Ottoman), l’Afrique (hors &ldquo;Barbaresques&rdquo;&quot;) et l’Amérique (hors États-Unis) dans un seul partenaire. Nous aggrégeons donc les données des autres sources pour que cela reste comparable. De plus, les autres sources n’indiquent pas la destination des ré-exportations coloniales de la France. Cela doit être gardé en tête pour interpréter les résultats.</p>
 <h3><a href="#représentation-graphique-concernant-les-importations" id="représentation-graphique-concernant-les-importations">Représentation graphique concernant les importations</a></h3>
 <p><img src="Graph2.svg" ></p>
-<p>Nous constatons que les différentes sources ne semblent concorder sur la valeur des importations de nombreux partenaires commerciaux. Néanmoins les données concernant l&rsquo;Espagne et l&rsquo;Allemagne semblent être les moins fiables.</p>
+<p>Nous constatons que les différentes sources ne semblent concorder sur la valeur des importations de nombreux partenaires commerciaux. C’est moins le cas pour les données concernant l&rsquo;Espagne et l&rsquo;Allemagne ; cela peut s’expliquer par les lacunes des retranscriptions.</p>
 <h3><a href="#représentation-graphique-concernant-les-exportations" id="représentation-graphique-concernant-les-exportations">Représentation graphique concernant les exportations</a></h3>
 <p><img src="Graph3.svg" ></p>
-<p>Nous constatons que les différentes sources ne semblent pas concorder sur la valeur des exportations de la plupart des partnaires commerciaux. Ceci est particulièrement vrai pour le Nord, la Hollande et la Flandre.</p>
+<p>Nous constatons que les différentes sources ne semblent pas concorder sur la valeur des exportations de la plupart des partnaires commerciaux. Ceci est particulièrement vrai pour le Nord, la Hollande et la Flandre. Cela s’explique aisemment pour l’absence de réexportations coloniales dans les autres sources. La coïncidence des sources dans le cas de l’Espagne est surprenant dans la mesure où il s’agissait d’un marché pour les réexportations coloniales françaises.</p>
 <h2><a href="#comparaison-selon-les-produits-par-partenaire" id="comparaison-selon-les-produits-par-partenaire">Comparaison selon les produits par partenaire</a></h2>
-<p>Nous tentons d&rsquo;identifier quels sont les produits par partenaire commercial pour lesquels les valeurs des exportations/importations diffèrent d&rsquo;une base de donnée à l&rsquo;autre. Ceci va nous permettre d&rsquo;identifier ainsi que de quantifier les erreurs dans la retranscriptions des données concernant la valeurs des  exportés et importés. Pour cela nous comparons les valeurs des exportations et des importations provenant d&rsquo;une source résumée et celles provenant d&rsquo;une source non résumées.</p>
-<p>Nous décidons de nous intéresser uniquement aux observations de l&rsquo;année 1789 et nous choisissons d&rsquo;exclure les observations pour lesquels la France est un partenaire commercial.</p>
+<p>Pour aller plus loin, nous tentons d&rsquo;identifier quels sont les produits par partenaire commercial pour lesquels les valeurs des exportations/importations diffèrent le plus entre le « Résumé » et les autres sources. Ceci va nous permettre d&rsquo;identifier et de quantifier plus précisément les erreurs dans la retranscriptions et la classification dans un travail ultérieur.</p>
+<p>Nous excluons le commerce avec la France, les ré-exportations de produits coloniaux et le commerce de métaux précieux pour les raisons expliquées plus haut.</p>
 <h3><a href="#représentation-graphique-concernant-les-importations" id="représentation-graphique-concernant-les-importations">Représentation graphique concernant les importations</a></h3>
 <p><img src="Graph4.svg" ></p>
 <h3><a href="#représentation-graphique-concernant-les-exportations" id="représentation-graphique-concernant-les-exportations">Représentation graphique concernant les exportations</a></h3>
 <p><img src="Graph5.svg" ></p>
+<p>Ces graphiques montrent que les différences importantes sont regroupées sur un nombre de produits x pays limités. Il n’aide pas à les identifier.</p>
 <h3><a href="#classement-des-produits-par-partenaire-les-moins-fiables" id="classement-des-produits-par-partenaire-les-moins-fiables">Classement des produits par partenaire les moins fiables</a></h3>
-<p>À présent nous calculons la différence entre les valeurs des produits par partenaire commercial provenant de la source : Résumé et des autres sources. Puis nous établissons un classement des produits par partenaire commercial pour lesquels la différence de valeurs entre les deux sources est la plus élevée.</p>
+<p>À présent nous calculons la différence entre les valeurs des produits par partenaire commercial provenant du « Résumé » et des autres sources. Puis nous établissons un classement des produits par partenaire commercial pour lesquels la différence de valeurs entre les deux sources est la plus élevée. Il y a deux manières d’aborder ces différences : soit en terme de point de log (ie en termes relatifs), soit en terme absolus.</p>
 <h4><a href="#classement-des-10-produits-par-partenaire-commercial-pour-lesquels-la-différence-des-log-des-valeurs-en-va-entre-les-deux-sources-est-la-plus-importante" id="classement-des-10-produits-par-partenaire-commercial-pour-lesquels-la-différence-des-log-des-valeurs-en-va-entre-les-deux-sources-est-la-plus-importante">Classement des 10 produits par partenaire commercial pour lesquels la différence des log des valeurs (en v.a.) entre les deux sources est la plus importante</a></h4>
 <pre><code>
 
@@ -34,55 +96,62 @@
 
 
 
-       Produit          Partenaire        X_ou_M   Diff_log  
-  1.   Produits agr..   Flandre et a..   Exports       6.56  
-  2.   Autres filés..   Suisse           Imports       6.38  
-  3.   Produits agr..   Hollande         Exports       6.28  
-  4.   Produits agr..   Nord             Exports       6.12  
-  5.   Divers mélan..   Levant et Ba..   Imports       5.14  
-  6.   Autres filés..   Allemagne        Imports       5.10  
-  7.   Produits du ..   Nord             Imports      -4.55  
-  8.   Filés ou tis..   Hollande         Exports      -4.43  
-  9.   Filés ou tis..   Allemagne        Exports      -4.29  
- 10.   Produits agr..   Italie           Exports       4.26  
- 11.   Autres filés..   Italie           Imports       4.13  
- 12.   Produits agr..   Suisse           Exports       4.01  
- 13.   Autres filés..   Hollande         Exports       3.99  
- 14.   Cuirs, peaux..   Allemagne        Imports       3.81  
- 15.   Autres filés..   Espagne          Imports       3.71  
- 16.   Autres filés..   Angleterre       Exports       3.67  
- 17.   Produits agr..   Angleterre       Exports       3.38  
- 18.   Divers mélan..   Suisse           Imports       3.37  
- 19.   Produits agr..   Levant et Ba..   Exports       3.21  
- 20.   Boissons et ..   Portugal         Imports       3.19  
+
+       Code   Produit          Partenaire        X_ou_M      diff_value   Diff_log  
+  1.     9b   Divers mélan..   Levant et Ba..   Imports       82,514.00       5.14  
+  2.     6i   Autres filés..   Allemagne        Imports    2,299,824.50       5.10  
+  3.     6b   Produits du ..   Nord             Imports   -3,648,810.75      -4.55  
+  4.     6d   Filés ou tis..   Hollande         Exports     -663,052.00      -4.43  
+  5.     6d   Filés ou tis..   Allemagne        Exports     -503,540.00      -4.29  
+  6.     6h   Autres filés..   Italie           Imports      268,626.31       4.13  
+  7.     6i   Autres filés..   Suisse           Imports        9,783.00       3.83  
+  8.     6a   Cuirs, peaux..   Allemagne        Imports      102,664.50       3.81  
+  9.     6h   Autres filés..   Espagne          Imports       44,875.00       3.71  
+ 10.     6h   Autres filés..   Angleterre       Exports    2,843,710.00       3.67  
+ 11.     9b   Divers mélan..   Suisse           Imports      395,004.50       3.37  
+ 12.      1   Boissons et ..   Portugal         Imports      733,476.00       3.19  
+ 13.     6i   Autres filés..   Angleterre       Imports    9,739,391.00       3.12  
+ 14.     9b   Divers mélan..   Allemagne        Imports    1,618,186.00       3.05  
+ 15.     9b   Divers mélan..   Espagne          Imports      584,596.00       2.95  
+ 16.     6h   Autres filés..   Hollande         Exports      427,031.50       2.93  
+ 17.     9b   Divers mélan..   Hollande         Exports      468,183.00       2.92  
+ 18.      4   Huiles, grai..   Allemagne        Exports     -673,952.19      -2.81  
+ 19.      2   Matières bru..   Angleterre       Exports   10,530,236.00       2.68  
+ 20.     6i   Autres filés..   Italie           Exports      682,532.25       2.68  
 
 
 </code></pre>
 <h4><a href="#classement-des-10-produits-par-partenaire-commercial-pour-lesquels-la-différence-des-valeurs-en-va-entre-les-deux-sources-est-la-plus-importante" id="classement-des-10-produits-par-partenaire-commercial-pour-lesquels-la-différence-des-valeurs-en-va-entre-les-deux-sources-est-la-plus-importante">Classement des 10 produits par partenaire commercial pour lesquels la différence des valeurs (en v.a.) entre les deux sources est la plus importante</a></h4>
 <pre><code>
 
-       Produit          Partenaire        X_ou_M      diff_value   Diff_log  
-  1.   Matières bru..   Levant et Ba..   Imports   10,714,049.00       0.57  
-  2.   Matières bru..   Angleterre       Exports   10,530,236.00       2.68  
-  3.   Autres filés..   Angleterre       Imports    9,739,391.00       3.12  
-  4.   Filés ou tis..   Allemagne        Exports    9,108,392.00       0.91  
-  5.   Filés ou tis..   Flandre et a..   Imports   -7,308,206.00      -1.65  
-  6.   Autres filés..   Flandre et a..   Imports    7,015,482.00       1.53  
-  7.   Autres filés..   Espagne          Exports    6,135,500.50       1.43  
-  8.   Filés ou tis..   Angleterre       Imports   -6,057,200.00      -1.18  
-  9.   Matières bru..   Nord             Imports    5,105,064.00       0.57  
- 10.   Filés ou tis..   Espagne          Exports   -5,027,228.00      -2.55  
- 11.   Matières bru..   Italie           Imports    5,004,275.00       0.20  
- 12.   Filés ou tis..   Italie           Imports   -4,585,759.00      -1.90  
- 13.   Filés ou tis..   Levant et Ba..   Imports   -4,335,740.00      -1.57  
- 14.   Produits du ..   Nord             Imports   -3,648,126.75      -4.55  
- 15.   Matières bru..   Espagne          Exports    3,373,778.25       1.56  
- 16.   Matières bru..   Suisse           Exports    3,266,736.25       1.67  
- 17.   Produits chi..   Nord             Exports    3,145,411.25       1.22  
- 18.   Autres filés..   Angleterre       Exports    2,843,710.00       3.67  
- 19.   Boissons et ..   Angleterre       Exports    2,651,147.00       0.21  
- 20.   Filés ou tis..   Espagne          Exports   -2,361,733.00      -0.95  
+       Code   Produit          Partenaire        X_ou_M      diff_value   Diff_log  
+  1.      2   Matières bru..   Levant et Ba..   Imports   10,714,049.00       0.57  
+  2.      2   Matières bru..   Angleterre       Exports   10,530,236.00       2.68  
+  3.     6i   Autres filés..   Angleterre       Imports    9,739,391.00       3.12  
+  4.     6f   Filés ou tis..   Allemagne        Exports    9,108,392.00       0.91  
+  5.     6d   Filés ou tis..   Flandre et a..   Imports   -7,308,206.00      -1.65  
+  6.     6h   Autres filés..   Flandre et a..   Imports    7,078,986.00       1.56  
+  7.     6h   Autres filés..   Espagne          Exports    6,135,500.50       1.43  
+  8.     6g   Filés ou tis..   Angleterre       Imports   -6,064,620.00      -1.18  
+  9.      2   Matières bru..   Nord             Imports    5,105,064.00       0.57  
+ 10.     6d   Filés ou tis..   Espagne          Exports   -5,027,228.00      -2.55  
+ 11.      2   Matières bru..   Italie           Imports    5,004,275.00       0.20  
+ 12.     6f   Filés ou tis..   Italie           Imports   -4,585,759.00      -1.90  
+ 13.     6g   Filés ou tis..   Levant et Ba..   Imports   -4,335,740.00      -1.57  
+ 14.     6b   Produits du ..   Nord             Imports   -3,648,810.75      -4.55  
+ 15.      2   Matières bru..   Espagne          Exports    3,373,778.25       1.56  
+ 16.      2   Matières bru..   Suisse           Exports    3,266,736.25       1.67  
+ 17.      5   Produits chi..   Nord             Exports    3,145,411.25       1.22  
+ 18.     6h   Autres filés..   Angleterre       Exports    2,843,710.00       3.67  
+ 19.      1   Boissons et ..   Angleterre       Exports    2,651,147.00       0.21  
+ 20.     6g   Filés ou tis..   Espagne          Exports   -2,361,733.00      -0.95  
 
+
+Certaines différences sont fortes en pourcentage mais représentent des petits flux que nous pouvons laisser de côté (Divers(9b) importés du Levant, Autres filés et tissés (6i) importés de Suisse, etc. Les vérifications à faire doivent plutôt se tourner vers les fortes différences dans les deux dimensions. Les résultats confirment que certaines erreurs viennent de différences de classification (voir les toiles 6d/6h importés de la Flandre et d’Espagne, 6i/6h importés d’Angleterre...)
+
+Nous avons donc là un grand nombre de renseignments utiles pour retourner vers les retranscriptions et les classifications de manière à traquer les erreurs.
+
+Auteurs : Paul Chaignaud, Guillaume Daudin
 
 
 

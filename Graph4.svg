@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- This is a Stata 17.0 generated SVG file (http://www.stata.com) -->
+
+<svg version="1.1" width="5.50in" height="4.00in" viewBox="0 0 3960 2880" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>Stata Graph - graph3</desc>
+	<rect x="0" y="0" width="3960" height="2880" style="fill:#EAF2F3;stroke:none"/>
+	<rect x="0.00" y="0.00" width="3959.88" height="2880.00" style="fill:#EAF2F3"/>
+	<rect x="2.88" y="2.88" width="3954.12" height="2874.24" style="fill:none;stroke:#EAF2F3;stroke-width:5.76"/>
+	<rect x="390.80" y="415.32" width="3468.22" height="2073.87" style="fill:#FFFFFF"/>
+	<rect x="393.68" y="418.20" width="3462.46" height="2068.11" style="fill:none;stroke:#FFFFFF;stroke-width:5.76"/>
+	<line x1="390.80" y1="2425.82" x2="3859.02" y2="2425.82" style="stroke:#EAF2F3;stroke-width:8.64"/>
+	<line x1="390.80" y1="2037.73" x2="3859.02" y2="2037.73" style="stroke:#EAF2F3;stroke-width:8.64"/>
+	<line x1="390.80" y1="1649.52" x2="3859.02" y2="1649.52" style="stroke:#EAF2F3;stroke-width:8.64"/>
+	<line x1="390.80" y1="1261.42" x2="3859.02" y2="1261.42" style="stroke:#EAF2F3;stroke-width:8.64"/>
+	<line x1="390.80" y1="873.21" x2="3859.02" y2="873.21" style="stroke:#EAF2F3;stroke-width:8.64"/>
+	<line x1="390.80" y1="485.12" x2="3859.02" y2="485.12" style="stroke:#EAF2F3;stroke-width:8.64"/>
+	<circle cx="2385.90" cy="1201.16" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2385.90" cy="1201.16" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="3125.93" cy="685.10" r="26.35" style="fill:#1A476F"/>
+	<circle cx="3125.93" cy="685.10" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2587.86" cy="1078.76" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2587.86" cy="1078.76" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2904.78" cy="870.61" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2904.78" cy="870.61" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="3076.67" cy="728.17" r="26.35" style="fill:#1A476F"/>
+	<circle cx="3076.67" cy="728.17" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="3049.45" cy="744.01" r="26.35" style="fill:#1A476F"/>
+	<circle cx="3049.45" cy="744.01" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2656.42" cy="1096.09" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2656.42" cy="1096.09" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2955.64" cy="816.28" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2955.64" cy="816.28" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2188.27" cy="1481.95" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2188.27" cy="1481.95" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2489.11" cy="1145.96" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2489.11" cy="1145.96" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2812.22" cy="926.92" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2812.22" cy="926.92" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2425.87" cy="1274.54" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2425.87" cy="1274.54" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2148.42" cy="1231.85" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2148.42" cy="1231.85" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2486.88" cy="1219.97" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2486.88" cy="1219.97" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2529.08" cy="1218.98" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2529.08" cy="1218.98" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="1991.01" cy="1702.36" r="26.35" style="fill:#1A476F"/>
+	<circle cx="1991.01" cy="1702.36" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2254.60" cy="1440.50" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2254.60" cy="1440.50" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2199.41" cy="1490.24" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2199.41" cy="1490.24" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="1864.29" cy="1657.81" r="26.35" style="fill:#1A476F"/>
+	<circle cx="1864.29" cy="1657.81" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2443.44" cy="1267.12" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2443.44" cy="1267.12" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2614.47" cy="1032.35" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2614.47" cy="1032.35" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2182.33" cy="1480.47" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2182.33" cy="1480.47" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2650.85" cy="1022.21" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2650.85" cy="1022.21" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="1975.05" cy="1738.37" r="26.35" style="fill:#1A476F"/>
+	<circle cx="1975.05" cy="1738.37" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="1664.93" cy="2013.23" r="26.35" style="fill:#1A476F"/>
+	<circle cx="1664.93" cy="2013.23" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="1647.86" cy="1349.29" r="26.35" style="fill:#1A476F"/>
+	<circle cx="1647.86" cy="1349.29" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2742.80" cy="1014.41" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2742.80" cy="1014.41" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2099.67" cy="1341.74" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2099.67" cy="1341.74" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2611.87" cy="1135.94" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2611.87" cy="1135.94" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2813.09" cy="935.95" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2813.09" cy="935.95" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2585.88" cy="1152.77" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2585.88" cy="1152.77" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2665.82" cy="1117.25" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2665.82" cy="1117.25" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="3118.01" cy="649.46" r="26.35" style="fill:#1A476F"/>
+	<circle cx="3118.01" cy="649.46" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="3003.66" cy="675.82" r="26.35" style="fill:#1A476F"/>
+	<circle cx="3003.66" cy="675.82" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2841.92" cy="818.14" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2841.92" cy="818.14" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2692.43" cy="1058.84" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2692.43" cy="1058.84" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2175.53" cy="1326.15" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2175.53" cy="1326.15" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2456.07" cy="1335.06" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2456.07" cy="1335.06" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2681.41" cy="1060.94" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2681.41" cy="1060.94" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2407.31" cy="1315.13" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2407.31" cy="1315.13" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="1971.21" cy="1715.35" r="26.35" style="fill:#1A476F"/>
+	<circle cx="1971.21" cy="1715.35" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2394.07" cy="1259.44" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2394.07" cy="1259.44" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2497.03" cy="1181.23" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2497.03" cy="1181.23" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="1780.14" cy="1953.45" r="26.35" style="fill:#1A476F"/>
+	<circle cx="1780.14" cy="1953.45" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2407.06" cy="1334.56" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2407.06" cy="1334.56" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="3064.55" cy="734.11" r="26.35" style="fill:#1A476F"/>
+	<circle cx="3064.55" cy="734.11" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2787.59" cy="1004.51" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2787.59" cy="1004.51" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2501.11" cy="1174.92" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2501.11" cy="1174.92" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="1525.34" cy="1998.25" r="26.35" style="fill:#1A476F"/>
+	<circle cx="1525.34" cy="1998.25" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2388.13" cy="1323.80" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2388.13" cy="1323.80" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="1846.35" cy="1777.97" r="26.35" style="fill:#1A476F"/>
+	<circle cx="1846.35" cy="1777.97" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2386.15" cy="1256.47" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2386.15" cy="1256.47" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2950.94" cy="801.55" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2950.94" cy="801.55" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2241.11" cy="1471.31" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2241.11" cy="1471.31" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2583.90" cy="1160.94" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2583.90" cy="1160.94" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2620.90" cy="1125.54" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2620.90" cy="1125.54" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2459.66" cy="1172.94" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2459.66" cy="1172.94" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2094.34" cy="1584.17" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2094.34" cy="1584.17" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2299.15" cy="1393.47" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2299.15" cy="1393.47" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="1566.06" cy="2066.44" r="26.35" style="fill:#1A476F"/>
+	<circle cx="1566.06" cy="2066.44" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2101.65" cy="1575.88" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2101.65" cy="1575.88" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="1068.09" cy="1734.66" r="26.35" style="fill:#1A476F"/>
+	<circle cx="1068.09" cy="1734.66" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2085.56" cy="1575.02" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2085.56" cy="1575.02" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2463.49" cy="1236.42" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2463.49" cy="1236.42" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="1950.18" cy="1931.92" r="26.35" style="fill:#1A476F"/>
+	<circle cx="1950.18" cy="1931.92" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2130.60" cy="1636.64" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2130.60" cy="1636.64" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2204.36" cy="1336.29" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2204.36" cy="1336.29" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2530.81" cy="1187.91" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2530.81" cy="1187.91" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2168.22" cy="1514.25" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2168.22" cy="1514.25" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2446.17" cy="1259.20" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2446.17" cy="1259.20" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="1818.26" cy="1654.09" r="26.35" style="fill:#1A476F"/>
+	<circle cx="1818.26" cy="1654.09" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="1738.81" cy="1871.03" r="26.35" style="fill:#1A476F"/>
+	<circle cx="1738.81" cy="1871.03" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2147.68" cy="1531.58" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2147.68" cy="1531.58" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2708.64" cy="1926.85" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2708.64" cy="1926.85" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2566.33" cy="1654.09" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2566.33" cy="1654.09" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2908.62" cy="1189.65" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2908.62" cy="1189.65" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2220.57" cy="1684.41" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2220.57" cy="1684.41" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2180.23" cy="1863.73" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2180.23" cy="1863.73" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2365.23" cy="1729.21" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2365.23" cy="1729.21" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2435.89" cy="1312.78" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2435.89" cy="1312.78" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2663.97" cy="1291.00" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2663.97" cy="1291.00" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2057.34" cy="1853.21" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2057.34" cy="1853.21" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2345.19" cy="1210.68" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2345.19" cy="1210.68" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="1941.51" cy="1722.16" r="26.35" style="fill:#1A476F"/>
+	<circle cx="1941.51" cy="1722.16" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="1345.04" cy="2234.38" r="26.35" style="fill:#1A476F"/>
+	<circle cx="1345.04" cy="2234.38" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="1557.02" cy="2099.86" r="26.35" style="fill:#1A476F"/>
+	<circle cx="1557.02" cy="2099.86" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2793.28" cy="1339.14" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2793.28" cy="1339.14" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2139.02" cy="1622.66" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2139.02" cy="1622.66" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2317.22" cy="1547.17" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2317.22" cy="1547.17" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2901.57" cy="1104.38" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2901.57" cy="1104.38" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2641.57" cy="1088.42" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2641.57" cy="1088.42" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="1821.11" cy="1645.80" r="26.35" style="fill:#1A476F"/>
+	<circle cx="1821.11" cy="1645.80" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2299.65" cy="1560.17" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2299.65" cy="1560.17" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2796.50" cy="1272.56" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2796.50" cy="1272.56" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2113.53" cy="1281.97" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2113.53" cy="1281.97" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2312.14" cy="1344.21" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2312.14" cy="1344.21" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="1930.38" cy="1694.69" r="26.35" style="fill:#1A476F"/>
+	<circle cx="1930.38" cy="1694.69" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="1185.53" cy="2013.23" r="26.35" style="fill:#1A476F"/>
+	<circle cx="1185.53" cy="2013.23" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2132.83" cy="1481.95" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2132.83" cy="1481.95" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="905.36" cy="1894.80" r="26.35" style="fill:#1A476F"/>
+	<circle cx="905.36" cy="1894.80" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2558.66" cy="871.72" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2558.66" cy="871.72" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2601.35" cy="1131.48" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2601.35" cy="1131.48" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="1207.80" cy="1549.27" r="26.35" style="fill:#1A476F"/>
+	<circle cx="1207.80" cy="1549.27" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2396.67" cy="1172.32" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2396.67" cy="1172.32" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="1750.94" cy="2087.98" r="26.35" style="fill:#1A476F"/>
+	<circle cx="1750.94" cy="2087.98" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2348.40" cy="1316.86" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2348.40" cy="1316.86" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="1469.78" cy="1134.45" r="26.35" style="fill:#1A476F"/>
+	<circle cx="1469.78" cy="1134.45" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2240.86" cy="846.72" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2240.86" cy="846.72" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="1807.00" cy="1557.94" r="26.35" style="fill:#1A476F"/>
+	<circle cx="1807.00" cy="1557.94" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="1062.89" cy="2021.15" r="26.35" style="fill:#1A476F"/>
+	<circle cx="1062.89" cy="2021.15" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="1839.42" cy="1662.88" r="26.35" style="fill:#1A476F"/>
+	<circle cx="1839.42" cy="1662.88" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="538.68" cy="2191.06" r="26.35" style="fill:#1A476F"/>
+	<circle cx="538.68" cy="2191.06" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2547.76" cy="1192.00" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2547.76" cy="1192.00" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2814.07" cy="929.02" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2814.07" cy="929.02" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2146.82" cy="1542.96" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2146.82" cy="1542.96" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2489.60" cy="1244.96" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2489.60" cy="1244.96" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2625.48" cy="1120.59" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2625.48" cy="1120.59" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2215.74" cy="1490.24" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2215.74" cy="1490.24" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2465.72" cy="1255.98" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2465.72" cy="1255.98" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2870.63" cy="891.15" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2870.63" cy="891.15" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="1657.88" cy="1664.12" r="26.35" style="fill:#1A476F"/>
+	<circle cx="1657.88" cy="1664.12" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="1432.78" cy="2140.08" r="26.35" style="fill:#1A476F"/>
+	<circle cx="1432.78" cy="2140.08" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2470.79" cy="1281.84" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2470.79" cy="1281.84" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="1930.62" cy="1863.73" r="26.35" style="fill:#1A476F"/>
+	<circle cx="1930.62" cy="1863.73" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="1992.75" cy="1476.51" r="26.35" style="fill:#1A476F"/>
+	<circle cx="1992.75" cy="1476.51" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2091.87" cy="1810.64" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2091.87" cy="1810.64" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2445.80" cy="1274.05" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2445.80" cy="1274.05" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2238.64" cy="1656.57" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2238.64" cy="1656.57" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2280.84" cy="1703.97" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2280.84" cy="1703.97" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2119.34" cy="1581.70" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2119.34" cy="1581.70" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="1560.98" cy="2125.72" r="26.35" style="fill:#1A476F"/>
+	<circle cx="1560.98" cy="2125.72" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2033.58" cy="1642.34" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2033.58" cy="1642.34" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2134.32" cy="1417.23" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2134.32" cy="1417.23" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="1857.49" cy="1194.35" r="26.35" style="fill:#1A476F"/>
+	<circle cx="1857.49" cy="1194.35" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2344.69" cy="1197.57" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2344.69" cy="1197.57" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="1653.92" cy="1390.99" r="26.35" style="fill:#1A476F"/>
+	<circle cx="1653.92" cy="1390.99" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="1894.98" cy="1305.85" r="26.35" style="fill:#1A476F"/>
+	<circle cx="1894.98" cy="1305.85" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2055.24" cy="1211.92" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2055.24" cy="1211.92" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="1986.06" cy="1283.82" r="26.35" style="fill:#1A476F"/>
+	<circle cx="1986.06" cy="1283.82" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="718.37" cy="1780.32" r="26.35" style="fill:#1A476F"/>
+	<circle cx="718.37" cy="1780.32" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2248.78" cy="1306.35" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2248.78" cy="1306.35" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="1323.01" cy="1818.93" r="26.35" style="fill:#1A476F"/>
+	<circle cx="1323.01" cy="1818.93" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="1466.93" cy="1470.81" r="26.35" style="fill:#1A476F"/>
+	<circle cx="1466.93" cy="1470.81" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="1726.07" cy="1775.62" r="26.35" style="fill:#1A476F"/>
+	<circle cx="1726.07" cy="1775.62" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<path d=" M2345.06 1360.80 L2370.93 1338.15 L2765.44 994.49 L2385.41 1325.65 L2388.99 1322.56 L2637.98 1105.49 L2196.44 1490.24 L2607.91 1131.73 L1888.80 1758.17 L2486.14 1237.91 L1534.99 2066.44 L2360.28 1347.43 L2208.69 1479.48 L2484.90 1238.90 L3006.63 784.35 L3206.36 610.48 L3048.70 747.72 L2794.28 969.36 L3357.46 478.80 L2773.49 987.56 L1546.38 2056.54 L2506.43 1220.09 L3008.36 782.99 L2560.39 1173.19 L2724.23 1030.37 L2717.05 1036.69 L2626.47 1115.64 L2138.28 1540.86 L3013.93 778.04 L1852.41 1789.85 L2574.12 1161.18 L2245.44 1447.55 L2334.30 1370.08 L2958.24 826.55 L2741.19 1015.65 L2387.63 1323.67 L2307.44 1393.47 L2558.28 1174.92 L2305.59 1395.08 L2456.44 1263.65 L1651.20 1965.34 L2728.19 1027.03 L1989.28 1670.68 L2220.94 1468.83 L1716.91 1907.91 L1779.77 1853.21 L2162.04 1520.19 L1983.09 1676.12 L1577.57 2029.32 L2515.71 1212.05 L1613.33 1998.25 L2104.62 1570.19 L2229.36 1461.53 L1278.21 2290.19 L2303.73 1396.69 L2397.66 1314.88 L2224.16 1466.11 L2246.43 1446.68 L2439.98 1278.01 L2516.95 1210.93 L2685.13 1064.53 L2751.33 1006.74 L2594.17 1143.73 L1613.33 1998.25 L1863.43 1780.32 L2063.78 1605.83 L2371.55 1337.66 L2045.59 1621.67 L1567.66 2037.98 L2404.83 1308.70 L1783.61 1849.87 L1683.49 1937.12 L2520.29 1208.09 L2164.14 1518.46 L1413.22 2172.50 L1577.57 2029.32 L1450.47 2140.08 L1888.80 1758.17 L1510.24 2087.98 L1871.35 1773.39 L2151.15 1529.60 L1837.93 1802.60 L2080.61 1591.10 L1934.21 1718.69 L2035.93 1630.09 L2237.03 1454.85 L1949.31 1705.58 L1900.43 1748.02 L1534.99 2066.44 L1312.62 2260.24 L2488.36 1235.93 L2226.76 1463.76 L2198.30 1488.64 L1342.32 2234.38 L2410.65 1303.62 L1432.65 2155.67 L1727.06 1899.13 L1432.65 2155.67 L1822.34 1816.21 L2381.20 1329.24 L2012.42 1650.51 L2819.40 947.58 L2436.76 1280.85 L1907.23 1742.21 L2833.01 935.58 L2866.42 906.50 L1963.42 1693.20 L2198.30 1488.64 L2456.07 1264.02 L1763.56 1867.32 L3024.33 769.01 L2191.61 1494.45 L2761.11 998.20 L2463.12 1257.83 L2156.96 1524.52 L2769.28 991.14 L2231.46 1459.68 L2099.05 1575.02 L2151.89 1528.98 L2417.09 1298.05 L1808.98 1827.72 L2130.36 1547.79 L2096.20 1577.49 L2505.81 1220.71 L2302.62 1397.68 L1741.41 1886.63 L2271.80 1424.53 L1546.38 2056.54 L1629.17 1984.39 L1873.95 1771.17 L1939.90 1713.62 L2473.39 1248.92 L2656.54 1089.41 L2883.00 892.02 L2559.52 1173.93 L2240.49 1451.76 L2510.52 1216.62 L1815.78 1821.90 L2170.95 1512.40 L2069.22 1601.13 L2143.72 1536.16 L1587.09 2021.15 L2403.47 1309.93 L2032.22 1633.30 L1976.78 1681.69 L1613.33 1998.25 L2348.78 1357.58 L1860.70 1782.67 L1959.95 1696.17 L2085.68 1586.77 L2283.56 1414.38 L1905.01 1744.19 L1843.88 1797.40 L2361.77 1346.19 L2352.36 1354.36 L1775.81 1856.68 L1392.06 2191.06 L2294.20 1404.98 L1432.65 2155.67 L1482.40 2112.35 L2122.07 1554.97 L1973.44 1684.41 L1716.91 1907.91 L2114.39 1561.65 L1876.55 1768.94 L1651.20 1965.34 L1658.00 1959.27 L1819.00 1818.93 L1413.22 2172.50 L2494.68 1230.48 L2235.05 1456.58 L2673.49 1074.55 L2184.06 1501.01 L2121.20 1555.71 L2702.33 1049.43 L2285.17 1412.90 L1891.15 1756.19 L1979.88 1678.84 L2212.65 1476.01 L1936.07 1716.96 L2293.83 1405.35 L2448.89 1270.33 L2596.03 1142.12 L2475.99 1246.70 L2261.28 1433.69 L2565.09 1169.10 L2152.63 1528.36 L2344.44 1361.29 L1996.83 1664.12 L2361.77 1346.19 L1990.77 1669.32 L2528.21 1201.16 L3120.60 685.10 L2668.67 1078.76 L2907.75 870.61 L3071.23 728.17 L3053.04 744.01 L2648.74 1096.09 L2970.00 816.28 L2205.84 1481.95 L2591.57 1145.96 L2843.03 926.92 L2443.94 1274.54 L2493.07 1231.85 L2506.56 1219.97 L2507.79 1218.98 L1952.90 1702.36 L2253.49 1440.50 L2196.44 1490.24 L2004.01 1657.81 L2452.48 1267.12 L2722.01 1032.35 L2207.58 1480.47 L2733.76 1022.21 L1911.57 1738.37 L1596.13 2013.23 L2358.30 1349.29 L2742.67 1014.41 L2366.84 1341.74 L2603.08 1135.94 L2832.64 935.95 L2583.90 1152.77 L2624.49 1117.25 L3161.57 649.46 L3131.25 675.82 L2968.02 818.14 L2691.56 1058.84 L2384.79 1326.15 L2374.51 1335.06 L2689.21 1060.94 L2397.41 1315.13 L1938.05 1715.35 L2461.26 1259.44 L2551.11 1181.23 L1664.68 1953.45 L2375.13 1334.56 L3064.42 734.11 L2753.93 1004.51 L2558.41 1174.92 L1613.33 1998.25 L2387.39 1323.80 L1866.15 1777.97 L2464.73 1256.47 L2986.95 801.55 L2218.22 1471.31 L2574.49 1160.94 L2614.96 1125.54 L2560.64 1172.94 L2088.53 1584.17 L2307.44 1393.47 L1534.99 2066.44 L2098.18 1575.88 L1915.90 1734.66 L2099.05 1575.02 L2487.75 1236.42 L1689.43 1931.92 L2028.39 1636.64 L2373.15 1336.29 L2543.43 1187.91 L2168.97 1514.25 L2461.64 1259.20 L2008.34 1654.09 L1759.35 1871.03 L2148.92 1531.58 L1695.25 1926.85 L2008.34 1654.09 L2541.45 1189.65 L1973.44 1684.41 L1767.64 1863.73 L1922.09 1729.21 L2400.13 1312.78 L2425.13 1291.00 L1779.77 1853.21 L2517.32 1210.68 L1930.25 1722.16 L1342.32 2234.38 L1496.76 2099.86 L2369.94 1339.14 L2044.47 1622.66 L2131.10 1547.17 L2639.34 1104.38 L2657.66 1088.42 L2017.87 1645.80 L2116.12 1560.17 L2446.29 1272.56 L2435.52 1281.97 L2364.00 1344.21 L1961.68 1694.69 L1596.13 2013.23 L2205.84 1481.95 L1732.01 1894.80 L2906.39 871.72 L2608.28 1131.48 L2128.75 1549.27 L2561.38 1172.32 L1510.24 2087.98 L2395.43 1316.86 L2604.81 1134.45 L2935.10 846.72 L2118.72 1557.94 L1587.09 2021.15 L1998.19 1662.88 L1392.06 2191.06 L2538.73 1192.00 L2840.68 929.02 L2135.93 1542.96 L2477.97 1244.96 L2620.65 1120.59 L2196.44 1490.24 L2465.35 1255.98 L2884.12 891.15 L1996.83 1664.12 L1450.47 2140.08 L2435.65 1281.84 L1767.64 1863.73 L2212.16 1476.51 L1828.65 1810.64 L2444.56 1274.05 L2005.49 1656.57 L1951.04 1703.97 L2091.50 1581.70 L1466.93 2125.72 L2021.83 1642.34 L2280.22 1417.23 L2536.01 1194.35 L2532.30 1197.57 L2310.41 1390.99 L2408.18 1305.85 L2515.84 1211.92 L2433.42 1283.82 L1863.43 1780.32 L2407.43 1306.35 L1819.00 1818.93 L2218.71 1470.81 L1868.75 1775.62" stroke-linejoin="round" style="fill:none;stroke:#90353B;stroke-width:8.64"/>
+	<line x1="390.80" y1="2489.19" x2="390.80" y2="415.32" style="stroke:#000000;stroke-width:5.76"/>
+	<line x1="390.80" y1="2425.82" x2="350.83" y2="2425.82" style="stroke:#000000;stroke-width:5.76"/>
+	<text x="300.72" y="2425.82" style="font-family:'Helvetica';font-size:99.99px;fill:#000000" transform="rotate(-90 300.72,2425.82)" text-anchor="middle">8</text>
+	<line x1="390.80" y1="2037.73" x2="350.83" y2="2037.73" style="stroke:#000000;stroke-width:5.76"/>
+	<text x="300.72" y="2037.73" style="font-family:'Helvetica';font-size:99.99px;fill:#000000" transform="rotate(-90 300.72,2037.73)" text-anchor="middle">10</text>
+	<line x1="390.80" y1="1649.52" x2="350.83" y2="1649.52" style="stroke:#000000;stroke-width:5.76"/>
+	<text x="300.72" y="1649.52" style="font-family:'Helvetica';font-size:99.99px;fill:#000000" transform="rotate(-90 300.72,1649.52)" text-anchor="middle">12</text>
+	<line x1="390.80" y1="1261.42" x2="350.83" y2="1261.42" style="stroke:#000000;stroke-width:5.76"/>
+	<text x="300.72" y="1261.42" style="font-family:'Helvetica';font-size:99.99px;fill:#000000" transform="rotate(-90 300.72,1261.42)" text-anchor="middle">14</text>
+	<line x1="390.80" y1="873.21" x2="350.83" y2="873.21" style="stroke:#000000;stroke-width:5.76"/>
+	<text x="300.72" y="873.21" style="font-family:'Helvetica';font-size:99.99px;fill:#000000" transform="rotate(-90 300.72,873.21)" text-anchor="middle">16</text>
+	<line x1="390.80" y1="485.12" x2="350.83" y2="485.12" style="stroke:#000000;stroke-width:5.76"/>
+	<text x="300.72" y="485.12" style="font-family:'Helvetica';font-size:99.99px;fill:#000000" transform="rotate(-90 300.72,485.12)" text-anchor="middle">18</text>
+	<text x="190.71" y="1452.25" style="font-family:'Helvetica';font-size:99.99px;fill:#000000" transform="rotate(-90 190.71,1452.25)" text-anchor="middle">Source : Résumé</text>
+	<line x1="390.80" y1="2489.19" x2="3859.02" y2="2489.19" style="stroke:#000000;stroke-width:5.76"/>
+	<line x1="454.16" y1="2489.19" x2="454.16" y2="2529.16" style="stroke:#000000;stroke-width:5.76"/>
+	<text x="454.16" y="2619.14" style="font-family:'Helvetica';font-size:99.99px;fill:#000000" text-anchor="middle">5</text>
+	<line x1="1568.04" y1="2489.19" x2="1568.04" y2="2529.16" style="stroke:#000000;stroke-width:5.76"/>
+	<text x="1568.04" y="2619.14" style="font-family:'Helvetica';font-size:99.99px;fill:#000000" text-anchor="middle">10</text>
+	<line x1="2681.91" y1="2489.19" x2="2681.91" y2="2529.16" style="stroke:#000000;stroke-width:5.76"/>
+	<text x="2681.91" y="2619.14" style="font-family:'Helvetica';font-size:99.99px;fill:#000000" text-anchor="middle">15</text>
+	<line x1="3795.66" y1="2489.19" x2="3795.66" y2="2529.16" style="stroke:#000000;stroke-width:5.76"/>
+	<text x="3795.66" y="2619.14" style="font-family:'Helvetica';font-size:99.99px;fill:#000000" text-anchor="middle">20</text>
+	<text x="2124.91" y="2729.16" style="font-family:'Helvetica';font-size:99.99px;fill:#000000" text-anchor="middle">Sources : Autres</text>
+	<text x="2124.91" y="215.98" style="font-family:'Helvetica';font-size:139.96px;fill:#1E2D53" text-anchor="middle">Comparaison des sources</text>
+	<text x="2124.91" y="356.06" style="font-family:'Helvetica';font-size:139.96px;fill:#1E2D53" text-anchor="middle"> par partenaire et produit (Imports 1789)</text>
+</svg>
