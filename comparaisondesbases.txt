@@ -273,11 +273,11 @@ gsort -diff_value_abs
 list Code Produit Partenaire X_ou_M diff_value Diff_log in 1/20, tabl  string(12) clean 
 <</dd_do>>
 
-Certaines différences sont fortes en pourcentage mais représentent des petits flux que nous pouvons laisser de côté (Divers(9b) importés du Levant, Autres filés et tissés (6i) importés de Suisse, etc. Les vérifications à faire doivent plutôt se tourner vers les fortes différences dans les deux dimensions. Les résultats confirment que certaines erreurs viennent de différences de classification (voir les toiles 6d/6h importés de la Flandre et d’Espagne, 6i/6h importés d’Angleterre...)
+Certaines différences sont fortes en pourcentage mais représentent des petits flux que nous pouvons laisser de côté (Divers(9b) importés du Levant, Autres filés et tissés (6i) importés de Suisse, etc. Les vérifications à faire doivent plutôt se tourner vers les fortes différences dans les deux dimensions. Les résultats confirment que certaines erreurs viennent de différences de classification (voir les toiles 6d/6h importés de la Flandre et d’Espagne, 6i/6h importés d’Angleterre...).
 
 Nous avons donc là un grand nombre de renseignments utiles pour retourner vers les retranscriptions et les classifications de manière à traquer les erreurs.
 
-Auteurs : Paul Chaignaud, Guillaume Daudin
+Auteurs : Paul Chagnaud, Guillaume Daudin
 
 
 
