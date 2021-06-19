@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- This is a Stata 17.0 generated SVG file (http://www.stata.com) -->
 
-<svg version="1.1" width="5.50in" height="4.00in" viewBox="0 0 3960 2880" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg version="1.1" width="5.500in" height="4.000in" viewBox="0 0 3960 2880" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 	<desc>Stata Graph - graph3</desc>
 	<rect x="0" y="0" width="3960" height="2880" style="fill:#EAF2F3;stroke:none"/>
 	<rect x="0.00" y="0.00" width="3959.88" height="2880.00" style="fill:#EAF2F3"/>
@@ -43,14 +43,14 @@
 	<text x="2913.94" y="880.43" style="font-family:'Helvetica';font-size:79.94px;fill:#1A476f">Outre-mers</text>
 	<circle cx="709.95" cy="2025.85" r="26.35" style="fill:#1A476F"/>
 	<circle cx="709.95" cy="2025.85" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
-	<text x="751.90" y="2053.86" style="font-family:'Helvetica';font-size:79.94px;fill:#1A476f">Portugal</text>
+	<text x="751.91" y="2053.86" style="font-family:'Helvetica';font-size:79.94px;fill:#1A476f">Portugal</text>
 	<circle cx="1794.75" cy="1356.47" r="26.35" style="fill:#1A476F"/>
 	<circle cx="1794.75" cy="1356.47" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
 	<text x="1836.70" y="1384.48" style="font-family:'Helvetica';font-size:79.94px;fill:#1A476f">Suisse</text>
 	<circle cx="454.16" cy="2355.04" r="26.35" style="fill:#1A476F"/>
 	<circle cx="454.16" cy="2355.04" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
 	<text x="496.11" y="2383.05" style="font-family:'Helvetica';font-size:79.94px;fill:#1A476f">États-Unis d'Amérique</text>
-	<path d=" M2050.41 1368.72 L1434.88 1776.24 L1984.70 1412.16 L2631.05 984.09 L2442.33 1109.08 L2196.81 1271.69 L1796.36 1536.90 L2295.19 1206.48 L1571.75 1685.65 L2398.15 1138.29 L2271.06 1222.44 L2744.78 908.85 L1849.82 1501.51 L2436.51 1112.92 L2055.98 1365.01 L2381.20 1149.55 L2871.99 824.57 L3394.09 478.80 L709.83 2256.53 L1446.88 1768.32 L1794.62 1538.01 L1283.04 1876.85 L454.04 2425.95 L1830.88 1514.00" stroke-linejoin="round" style="fill:none;stroke:#90353B;stroke-width:8.64"/>
+	<path d=" M2050.41 1368.72 L1434.88 1776.24 L1984.70 1412.16 L2631.05 984.09 L2442.33 1109.08 L2196.81 1271.69 L1796.36 1536.90 L2295.19 1206.48 L1571.75 1685.65 L2398.15 1138.29 L2271.06 1222.44 L2744.78 908.85 L1849.82 1501.51 L2436.51 1112.92 L2055.98 1365.01 L2381.20 1149.55 L2871.99 824.57 L3394.09 478.80 L709.83 2256.53 L1446.89 1768.32 L1794.62 1538.01 L1283.04 1876.85 L454.04 2425.95 L1830.88 1514.00" stroke-linejoin="round" style="fill:none;stroke:#90353B;stroke-width:8.64"/>
 	<line x1="390.80" y1="2489.19" x2="390.80" y2="415.32" style="stroke:#000000;stroke-width:5.76"/>
 	<line x1="390.80" y1="2366.55" x2="350.83" y2="2366.55" style="stroke:#000000;stroke-width:5.76"/>
 	<text x="300.72" y="2366.55" style="font-family:'Helvetica';font-size:99.99px;fill:#000000" transform="rotate(-90 300.72,2366.55)" text-anchor="middle">14</text>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- This is a Stata 17.0 generated SVG file (http://www.stata.com) -->
 
-<svg version="1.1" width="5.50in" height="4.00in" viewBox="0 0 3960 2880" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg version="1.1" width="5.500in" height="4.000in" viewBox="0 0 3960 2880" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 	<desc>Stata Graph - graph3</desc>
 	<rect x="0" y="0" width="3960" height="2880" style="fill:#EAF2F3;stroke:none"/>
 	<rect x="0.00" y="0.00" width="3959.88" height="2880.00" style="fill:#EAF2F3"/>
@@ -19,8 +19,8 @@
 	<circle cx="3289.40" cy="770.49" r="26.35" style="fill:#1A476F"/>
 	<circle cx="3289.40" cy="770.49" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
 	<text x="3331.35" y="798.50" style="font-family:'Helvetica';font-size:79.94px;fill:#1A476f">0b</text>
-	<circle cx="2886.34" cy="1010.08" r="26.35" style="fill:#1A476F"/>
-	<circle cx="2886.34" cy="1010.08" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2886.35" cy="1010.08" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2886.35" cy="1010.08" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
 	<text x="2928.30" y="1038.09" style="font-family:'Helvetica';font-size:79.94px;fill:#1A476f">1</text>
 	<circle cx="2382.56" cy="1167.99" r="26.35" style="fill:#1A476F"/>
 	<circle cx="2382.56" cy="1167.99" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
@@ -52,8 +52,8 @@
 	<circle cx="2551.48" cy="1151.78" r="26.35" style="fill:#1A476F"/>
 	<circle cx="2551.48" cy="1151.78" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
 	<text x="2593.43" y="1179.79" style="font-family:'Helvetica';font-size:79.94px;fill:#1A476f">6f</text>
-	<circle cx="2506.18" cy="1305.48" r="26.35" style="fill:#1A476F"/>
-	<circle cx="2506.18" cy="1305.48" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="2506.19" cy="1305.48" r="26.35" style="fill:#1A476F"/>
+	<circle cx="2506.19" cy="1305.48" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
 	<text x="2548.14" y="1333.49" style="font-family:'Helvetica';font-size:79.94px;fill:#1A476f">6g</text>
 	<circle cx="1838.43" cy="1133.21" r="26.35" style="fill:#1A476F"/>
 	<circle cx="1838.43" cy="1133.21" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
@@ -66,7 +66,7 @@
 	<text x="2089.64" y="1540.66" style="font-family:'Helvetica';font-size:79.94px;fill:#1A476f">6j</text>
 	<circle cx="1672.23" cy="1752.97" r="26.35" style="fill:#1A476F"/>
 	<circle cx="1672.23" cy="1752.97" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
-	<text x="1714.18" y="1780.99" style="font-family:'Helvetica';font-size:79.94px;fill:#1A476f">6k</text>
+	<text x="1714.19" y="1780.99" style="font-family:'Helvetica';font-size:79.94px;fill:#1A476f">6k</text>
 	<circle cx="1488.71" cy="1913.11" r="26.35" style="fill:#1A476F"/>
 	<circle cx="1488.71" cy="1913.11" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
 	<text x="1530.66" y="1941.12" style="font-family:'Helvetica';font-size:79.94px;fill:#1A476f">7</text>
@@ -79,7 +79,7 @@
 	<circle cx="2254.60" cy="1334.19" r="26.35" style="fill:#1A476F"/>
 	<circle cx="2254.60" cy="1334.19" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
 	<text x="2296.55" y="1362.20" style="font-family:'Helvetica';font-size:79.94px;fill:#1A476f">9b</text>
-	<path d=" M2578.95 1187.79 L3124.93 869.62 L3294.97 770.49 L3432.58 690.30 L2348.90 1321.82 L2883.62 1010.20 L2612.73 1167.99 L3150.80 854.52 L1263.86 1954.07 L1896.35 1585.53 L2625.11 1160.81 L1839.05 1618.95 L2413.25 1284.32 L2670.90 1134.20 L1847.22 1614.12 L2027.27 1509.18 L759.33 2247.99 L864.76 2186.61 L1512.10 1809.41 L1901.54 1582.44 L1687.83 1707.06 L1248.39 1963.11 L2568.55 1193.73 L1668.77 1718.07 L2640.58 1151.90 L2376.87 1305.48 L2228.99 1391.74 L2672.51 1133.21 L2340.24 1326.77 L1575.46 1772.53 L2286.03 1358.45 L2021.21 1512.77 L2510.02 1227.89 L1608.75 1753.10 L1266.09 1952.84 L826.53 2208.88 L1334.03 1913.11 L1584.49 1767.21 L2376.74 1305.60 L2922.23 987.68 L628.28 2324.35 L2145.08 1440.50 L2327.61 1334.19" stroke-linejoin="round" style="fill:none;stroke:#90353B;stroke-width:8.64"/>
+	<path d=" M3124.94 869.62 L2578.95 1187.79 L3432.58 690.30 L3294.97 770.49 L2348.90 1321.82 L2883.62 1010.20 L2612.73 1167.99 L3150.80 854.52 L1896.35 1585.53 L1263.86 1954.07 L1839.05 1618.95 L2625.11 1160.81 L2413.25 1284.32 L2670.90 1134.20 L1847.22 1614.12 L2027.27 1509.18 L759.33 2247.99 L864.77 2186.61 L1512.10 1809.41 L1901.54 1582.44 L1687.83 1707.06 L1248.39 1963.11 L2568.55 1193.73 L2640.58 1151.90 L1668.77 1718.07 L2376.87 1305.48 L2228.99 1391.74 L2672.51 1133.21 L2340.24 1326.77 L1575.46 1772.53 L2286.03 1358.45 L2510.02 1227.89 L2021.21 1512.77 L1608.75 1753.10 L1266.09 1952.84 L1334.03 1913.11 L826.53 2208.88 L2376.74 1305.60 L1584.50 1767.21 L628.28 2324.35 L2922.23 987.68 L2145.08 1440.50 L2327.61 1334.19" stroke-linejoin="round" style="fill:none;stroke:#90353B;stroke-width:8.64"/>
 	<line x1="390.80" y1="2489.19" x2="390.80" y2="415.32" style="stroke:#000000;stroke-width:5.76"/>
 	<line x1="390.80" y1="2425.82" x2="350.83" y2="2425.82" style="stroke:#000000;stroke-width:5.76"/>
 	<text x="300.72" y="2425.82" style="font-family:'Helvetica';font-size:99.99px;fill:#000000" transform="rotate(-90 300.72,2425.82)" text-anchor="middle">12</text>

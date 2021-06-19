@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- This is a Stata 17.0 generated SVG file (http://www.stata.com) -->
 
-<svg version="1.1" width="5.50in" height="4.00in" viewBox="0 0 3960 2880" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg version="1.1" width="5.500in" height="4.000in" viewBox="0 0 3960 2880" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 	<desc>Stata Graph - graph3</desc>
 	<rect x="0" y="0" width="3960" height="2880" style="fill:#EAF2F3;stroke:none"/>
 	<rect x="0.00" y="0.00" width="3959.88" height="2880.00" style="fill:#EAF2F3"/>
@@ -15,9 +15,9 @@
 	<line x1="390.80" y1="478.68" x2="3859.02" y2="478.68" style="stroke:#EAF2F3;stroke-width:8.64"/>
 	<circle cx="1695.99" cy="1767.21" r="26.35" style="fill:#1A476F"/>
 	<circle cx="1695.99" cy="1767.21" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
-	<text x="1737.94" y="1795.22" style="font-family:'Helvetica';font-size:79.94px;fill:#1A476f">8</text>
-	<circle cx="1543.90" cy="1952.71" r="26.35" style="fill:#1A476F"/>
-	<circle cx="1543.90" cy="1952.71" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<text x="1737.95" y="1795.22" style="font-family:'Helvetica';font-size:79.94px;fill:#1A476f">8</text>
+	<circle cx="1543.91" cy="1952.71" r="26.35" style="fill:#1A476F"/>
+	<circle cx="1543.91" cy="1952.71" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
 	<text x="1585.86" y="1980.72" style="font-family:'Helvetica';font-size:79.94px;fill:#1A476f">6k</text>
 	<circle cx="1260.52" cy="1358.45" r="26.35" style="fill:#1A476F"/>
 	<circle cx="1260.52" cy="1358.45" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
@@ -55,28 +55,28 @@
 	<circle cx="2621.27" cy="1160.81" r="26.35" style="fill:#1A476F"/>
 	<circle cx="2621.27" cy="1160.81" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
 	<text x="2663.22" y="1188.82" style="font-family:'Helvetica';font-size:79.94px;fill:#1A476f">4</text>
-	<circle cx="1362.73" cy="2208.76" r="26.35" style="fill:#1A476F"/>
-	<circle cx="1362.73" cy="2208.76" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="1362.74" cy="2208.76" r="26.35" style="fill:#1A476F"/>
+	<circle cx="1362.74" cy="2208.76" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
 	<text x="1404.69" y="2236.77" style="font-family:'Helvetica';font-size:79.94px;fill:#1A476f">7</text>
 	<circle cx="3054.27" cy="854.52" r="26.35" style="fill:#1A476F"/>
 	<circle cx="3054.27" cy="854.52" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
-	<text x="3096.22" y="882.53" style="font-family:'Helvetica';font-size:79.94px;fill:#1A476f">2</text>
+	<text x="3096.23" y="882.53" style="font-family:'Helvetica';font-size:79.94px;fill:#1A476f">2</text>
 	<circle cx="1541.43" cy="987.68" r="26.35" style="fill:#1A476F"/>
 	<circle cx="1541.43" cy="987.68" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
 	<text x="1583.38" y="1015.69" style="font-family:'Helvetica';font-size:79.94px;fill:#1A476f">9a</text>
 	<circle cx="2488.98" cy="1227.89" r="26.35" style="fill:#1A476F"/>
 	<circle cx="2488.98" cy="1227.89" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
-	<text x="2530.93" y="1255.90" style="font-family:'Helvetica';font-size:79.94px;fill:#1A476f">6j</text>
+	<text x="2530.94" y="1255.90" style="font-family:'Helvetica';font-size:79.94px;fill:#1A476f">6j</text>
 	<circle cx="3430.60" cy="690.30" r="26.35" style="fill:#1A476F"/>
 	<circle cx="3430.60" cy="690.30" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
 	<text x="3472.55" y="718.31" style="font-family:'Helvetica';font-size:79.94px;fill:#1A476f">0b</text>
 	<circle cx="2632.91" cy="1134.08" r="26.35" style="fill:#1A476F"/>
 	<circle cx="2632.91" cy="1134.08" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
 	<text x="2674.86" y="1162.09" style="font-family:'Helvetica';font-size:79.94px;fill:#1A476f">5</text>
-	<circle cx="1907.23" cy="2247.99" r="26.35" style="fill:#1A476F"/>
-	<circle cx="1907.23" cy="2247.99" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<circle cx="1907.24" cy="2247.99" r="26.35" style="fill:#1A476F"/>
+	<circle cx="1907.24" cy="2247.99" r="22.03" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
 	<text x="1949.19" y="2276.00" style="font-family:'Helvetica';font-size:79.94px;fill:#1A476f">6b</text>
-	<path d=" M2376.74 1305.60 L1584.49 1767.21 L1608.75 1753.10 L1266.09 1952.84 L1575.46 1772.53 L2286.03 1358.45 L2672.51 1133.21 L2340.24 1326.77 L2578.95 1187.79 L3124.93 869.62 L2883.62 1010.20 L2348.90 1321.82 L1263.86 1954.07 L1896.35 1585.53 L1847.22 1614.12 L2027.27 1509.18 L2327.61 1334.19 L2145.08 1440.50 L2376.87 1305.48 L2228.99 1391.74 L1901.54 1582.44 L1687.83 1707.06 L2568.55 1193.73 L1248.39 1963.11 L2640.58 1151.90 L1668.77 1718.07 L1839.05 1618.95 L2625.11 1160.81 L1334.03 1913.11 L826.53 2208.88 L2612.73 1167.99 L3150.80 854.52 L628.28 2324.35 L2922.23 987.68 L2021.21 1512.77 L2510.02 1227.89 L1512.10 1809.41 L3294.97 770.49 L3432.58 690.30 L2413.25 1284.32 L2670.90 1134.20 L864.76 2186.61 L759.33 2247.99" stroke-linejoin="round" style="fill:none;stroke:#90353B;stroke-width:8.64"/>
+	<path d=" M2376.74 1305.60 L1584.50 1767.21 L1608.75 1753.10 L1266.09 1952.84 L1575.46 1772.53 L2286.03 1358.45 L2672.51 1133.21 L2340.24 1326.77 L2578.95 1187.79 L3124.94 869.62 L2883.62 1010.20 L2348.90 1321.82 L1263.86 1954.07 L1896.35 1585.53 L1847.22 1614.12 L2027.27 1509.18 L2327.61 1334.19 L2145.08 1440.50 L2376.87 1305.48 L2228.99 1391.74 L1901.54 1582.44 L1687.83 1707.06 L2568.55 1193.73 L1248.39 1963.11 L2640.58 1151.90 L1668.77 1718.07 L1839.05 1618.95 L2625.11 1160.81 L1334.03 1913.11 L826.53 2208.88 L2612.73 1167.99 L3150.80 854.52 L628.28 2324.35 L2922.23 987.68 L2021.21 1512.77 L2510.02 1227.89 L1512.10 1809.41 L3294.97 770.49 L3432.58 690.30 L2413.25 1284.32 L2670.90 1134.20 L864.77 2186.61 L759.33 2247.99" stroke-linejoin="round" style="fill:none;stroke:#90353B;stroke-width:8.64"/>
 	<line x1="390.80" y1="2489.19" x2="390.80" y2="415.32" style="stroke:#000000;stroke-width:5.76"/>
 	<line x1="390.80" y1="2425.82" x2="350.83" y2="2425.82" style="stroke:#000000;stroke-width:5.76"/>
 	<text x="300.72" y="2425.82" style="font-family:'Helvetica';font-size:99.99px;fill:#000000" transform="rotate(-90 300.72,2425.82)" text-anchor="middle">12</text>

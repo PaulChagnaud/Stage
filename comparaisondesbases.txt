@@ -31,8 +31,8 @@ rename value1 Résumé
 
 Un simple calcul sur l’ensemble des données montre que les exportations sont plus importantes d’après le Résume (de plus de 40 millions de livres tournois, ou moins de 10%) et les importations plus faibles (d’à peu près de la même somme).
 ~~~~
-<<dd_do>>
-list
+<<dd_do:nocommand>>
+list, clean
 <</dd_do>>
 ~~~~
 
@@ -65,8 +65,8 @@ rename value1 Résumé
 
 L’exclusion du commerce intra-français réduit l’écart pour les exports, mais l’augmente pour les importations.
 ~~~~
-<<dd_do>>
-list
+<<dd_do:nocommand>>
+list, clean
 <</dd_do>>
 ~~~~
 
@@ -108,8 +108,8 @@ sort product_sitc
 <<dd_graph>>
 
 ~~~~
-<<dd_do>>
-list product_sitc product_sitc_FR if export_import=="Imports"
+<<dd_do:nocommand>>
+list product_sitc product_sitc_FR if export_import=="Imports", clean
 <</dd_do>>
 ~~~~
 
@@ -243,8 +243,8 @@ gen diff_value =value0-value1
 drop if product_sitc=="0b" & export_import=="Exports"
 gsort -diff_value_log_abs
 format *value* %15.2fc
-br if product_sitc !="0b" 
-br if product_sitc !="0b" & partner_grouping=="Espagne" 
+*br if product_sitc !="0b" 
+*br if product_sitc !="0b" & partner_grouping=="Espagne" 
 gsort -diff_value_log_abs diff_value
 <</dd_do>>
 ~~~~
@@ -272,6 +272,7 @@ gsort -diff_value_abs
 <<dd_do:nocommand>>
 list Code Produit Partenaire X_ou_M diff_value Diff_log in 1/20, tabl  string(12) clean 
 <</dd_do>>
+~~~~
 
 Certaines différences sont fortes en pourcentage mais représentent des petits flux que nous pouvons laisser de côté (Divers(9b) importés du Levant, Autres filés et tissés (6i) importés de Suisse, etc. Les vérifications à faire doivent plutôt se tourner vers les fortes différences dans les deux dimensions. Les résultats confirment que certaines erreurs viennent de différences de classification (voir les toiles 6d/6h importés de la Flandre et d’Espagne, 6i/6h importés d’Angleterre...).
 
