@@ -1,5 +1,5 @@
 <h1><a id="rapport-sur-les-comparaisons-des-sources-sur-le-commerce-extérieur-de-la-france-de-1789" href="#rapport-sur-les-comparaisons-des-sources-sur-le-commerce-extérieur-de-la-france-de-1789">Rapport sur les comparaisons des sources sur le commerce extérieur de la France de 1789</a></h1>
-Nous disposons de différentes sources sur les données du commerce au XVIIIe siècle et nous essayons de tester leur robustesse en les comparant entre elles.
+Nous disposons de différentes sources sur les données du commerce au XVIIIe siècle. Dans cette note, nous les comparons systématiquement. Les codes à l’origines des graphiques et tableaux se trouvent dans <a href="https://github.com/PaulChagnaud/StagePaulChagnaud">ce répertoire Github.</a>
 
 Ce processus automatisé permet d’explorer les différences dans les chiffres sur le commerce de 1789 donnés par différentes sources (le « Résumé » se trouvant aux Archives Nationales à la cote F12 251 et des sources dispersée, souvent plus précises, aux Archives Nationales aux cotes F12 1666 et 1667 et aux Archives Nationales d’Outre-Mer à la cote Col F 2B 14).
 
@@ -32,8 +32,8 @@ Pour aller plus loin dans l’analyse, nous allons commencer par comparer le com
 <h3><a id="représentation-graphique-concernant-les-importations" href="#représentation-graphique-concernant-les-importations">Représentation graphique concernant les importations</a></h3>
 Ce graphique, comme les suivants, compare le logarithme de la valeur des flux selon chaque source. L’écart à la bissectrice peut donc s’interpréter comme une variation en pourcentage.
 
-<a href="https://toflit18.hypotheses.org/files/2021/06/Valeurs_résumées_VS_Valeurs_non_résumées_par_produit_Imports_1789.png"><img class="alignnone size-full wp-image-919" src="https://toflit18.hypotheses.org/files/2021/06/Valeurs_résumées_VS_Valeurs_non_résumées_par_produit_Imports_1789.png" alt="" width="1320" height="960" /></a>
-<pre><code><span style="font-size: 6pt;">
+<a href="https://toflit18.hypotheses.org/files/2021/06/Valeurs_résumées_VS_Valeurs_non_résumées_par_produit_Imports_1789.png"><img class="alignnone size-full wp-image-919" src="https://toflit18.hypotheses.org/files/2021/06/Valeurs_résumées_VS_Valeurs_non_résumées_par_produit_Imports_1789.png" alt="" width="1320" height="960"></a>
+<pre><code><span style="font-size: 6pt">
        produc~c                                                             product_sitc_FR  
   1.         0a                                     Autres produits alimentaires et animaux  
   3.         0b      Produits agricoles alimentaires des régions de colonisation européenne  
@@ -62,7 +62,7 @@ Ce graphique, comme les suivants, compare le logarithme de la valeur des flux se
 </span></code></pre>
 Nous constatons que les différentes sources ne semblent pas concorder sur la valeur des importations de nombreux produits. Cependant, il s’agit rarement de produits ayant un commerce considérable (haut et droite du graphique), à part pour les “Monnaies et métaux précieux (9a)”. En effet, le Résumé ne rapporte pas une importation de 55 millions de livres tournois de numéraire en provenance de l’Espagne. D’autres différences, notamment entre les produits textiles, viennent sans doute de difficulté de classification. Les sources n’indiquent bien sûr pas les catégories “SITC18” des produits et nous les avons construits nous-mêmes (voir, par exemple <a href="https://toflit18.hypotheses.org/873">ici</a>).
 <h3><a id="représentation-graphique-concernant-les-exportations" href="#représentation-graphique-concernant-les-exportations">Représentation graphique concernant les exportations</a></h3>
-<a href="https://toflit18.hypotheses.org/files/2021/06/Valeurs_résumées_VS_Valeurs_non_résumées_par_produit_Exports_1789.png"><img class="alignnone size-full wp-image-918" src="https://toflit18.hypotheses.org/files/2021/06/Valeurs_résumées_VS_Valeurs_non_résumées_par_produit_Exports_1789.png" alt="" width="1320" height="960" /></a>
+<a href="https://toflit18.hypotheses.org/files/2021/06/Valeurs_résumées_VS_Valeurs_non_résumées_par_produit_Exports_1789.png"><img class="alignnone size-full wp-image-918" src="https://toflit18.hypotheses.org/files/2021/06/Valeurs_résumées_VS_Valeurs_non_résumées_par_produit_Exports_1789.png" alt="" width="1320" height="960"></a>
 
 Malgré une amélioration par rapport aux importations, nous constatons que les différentes sources ne semblent pas concorder sur la valeur des exportations de nombreux produits. C’est surtout vrai cependant pour des flux de moindre importance, à part la différence pour les “Filés ou tissés de fibre végétale non mélangés (6d)” et les “Autres filés ou tissés mélangés de fibre végétales dont toiles (6h)”. La distinction entre les deux catégories est parfois difficile à opérer à partir des indications des sources. Il y a aussi un souci de classifications entre les "Combustibles (3)" et les "Produits du bois, liège et jonc (6b)".
 <h2><a id="comparaison-selon-les-partenaires" href="#comparaison-selon-les-partenaires">Comparaison selon les partenaires</a></h2>
@@ -70,27 +70,27 @@ Nous tentons d’identifier quels sont les partenaires commerciaux pour lesquels
 
 Le “Résumé” mêle l’Asie (hors l’empire Ottoman), l’Afrique (hors “Barbaresques”") et l’Amérique (hors États-Unis) dans un seul partenaire. Nous agrégeons donc les données des autres sources pour que les flux soient comparables. De plus, les autres sources n’indiquent pas la destination des ré-exportations coloniales de la France. C’est important pour l’interprétation des résultats.
 <h3><a id="représentation-graphique-concernant-les-importations" href="#représentation-graphique-concernant-les-importations">Représentation graphique concernant les importations</a></h3>
-<a href="https://toflit18.hypotheses.org/files/2021/06/Valeurs_résumées_VS_Valeurs_non_résumées_par_partenaire_Imports_1789.png"><img class="alignnone size-full wp-image-917" src="https://toflit18.hypotheses.org/files/2021/06/Valeurs_résumées_VS_Valeurs_non_résumées_par_partenaire_Imports_1789.png" alt="" width="1320" height="960" /></a>
+<a href="https://toflit18.hypotheses.org/files/2021/06/Valeurs_résumées_VS_Valeurs_non_résumées_par_partenaire_Imports_1789.png"><img class="alignnone size-full wp-image-917" src="https://toflit18.hypotheses.org/files/2021/06/Valeurs_résumées_VS_Valeurs_non_résumées_par_partenaire_Imports_1789.png" alt="" width="1320" height="960"></a>
 
 Nous constatons que les différentes sources concordent assez bien sur la valeur des importations par partenaires commerciaux. C’est un peu moins le cas pour les données concernant l’Espagne, l’Allemagne et la Suisse ; mais les différences sont mineures. Cela peut s’expliquer par les lacunes des retranscriptions pour les sources "Autres".
 <h3><a id="représentation-graphique-concernant-les-exportations" href="#représentation-graphique-concernant-les-exportations">Représentation graphique concernant les exportations</a></h3>
-<a href="https://toflit18.hypotheses.org/files/2021/06/Valeurs_résumées_VS_Valeurs_non_résumées_par_partenaire_Exports_1789.png"><img class="alignnone size-full wp-image-916" src="https://toflit18.hypotheses.org/files/2021/06/Valeurs_résumées_VS_Valeurs_non_résumées_par_partenaire_Exports_1789.png" alt="" width="1320" height="960" /></a>
+<a href="https://toflit18.hypotheses.org/files/2021/06/Valeurs_résumées_VS_Valeurs_non_résumées_par_partenaire_Exports_1789.png"><img class="alignnone size-full wp-image-916" src="https://toflit18.hypotheses.org/files/2021/06/Valeurs_résumées_VS_Valeurs_non_résumées_par_partenaire_Exports_1789.png" alt="" width="1320" height="960"></a>
 
 Pour les exportations, il y a de nombreuses différences plus importantes. Ceci est particulièrement vrai pour le Nord, la Hollande et la Flandre. Cela s’explique aisément par l’absence de réexportations coloniales dans les sources "Autres". La coïncidence des sources dans le cas de l’Espagne est surprenant dans la mesure où il s’agissait d’un marché pour les réexportations coloniales françaises.
 <h2><a id="comparaison-selon-les-produits-par-partenaire" href="#comparaison-selon-les-produits-par-partenaire">Comparaison selon les produits par partenaire</a></h2>
-Pour aller plus loin, nous tentons d’identifier quels sont les produits par partenaire commercial pour lesquels les valeurs des exportations/importations diffèrent le plus entre le « Résumé » et les  sources "Autres". Ceci va nous permettre d’identifier et de quantifier plus précisément les erreurs dans la retranscriptions et la classification dans un travail ultérieur.
+Pour aller plus loin, nous tentons d’identifier quels sont les produits par partenaire commercial pour lesquels les valeurs des exportations/importations diffèrent le plus entre le « Résumé » et les&nbsp; sources "Autres". Ceci va nous permettre d’identifier et de quantifier plus précisément les erreurs dans la retranscriptions et la classification dans un travail ultérieur.
 
 Nous excluons le commerce avec la France, les ré-exportations de produits coloniaux et le commerce de métaux précieux pour les raisons expliquées plus haut.
 <h3><a id="représentation-graphique-concernant-les-importations" href="#représentation-graphique-concernant-les-importations">Représentation graphique concernant les importations</a></h3>
-<a href="https://toflit18.hypotheses.org/files/2021/06/Valeurs_résumées_VS_Valeurs_non_résumées_par_partenaire_et_par_produit_Imports_1789.png"><img class="alignnone size-full wp-image-915" src="https://toflit18.hypotheses.org/files/2021/06/Valeurs_résumées_VS_Valeurs_non_résumées_par_partenaire_et_par_produit_Imports_1789.png" alt="" width="1320" height="960" /></a>
+<a href="https://toflit18.hypotheses.org/files/2021/06/Valeurs_résumées_VS_Valeurs_non_résumées_par_partenaire_et_par_produit_Imports_1789.png"><img class="alignnone size-full wp-image-915" src="https://toflit18.hypotheses.org/files/2021/06/Valeurs_résumées_VS_Valeurs_non_résumées_par_partenaire_et_par_produit_Imports_1789.png" alt="" width="1320" height="960"></a>
 <h3><a id="représentation-graphique-concernant-les-exportations" href="#représentation-graphique-concernant-les-exportations">Représentation graphique concernant les exportations</a></h3>
-<a href="https://toflit18.hypotheses.org/files/2021/06/Valeurs_résumées_VS_Valeurs_non_résumées_par_partenaire_et_par_produit_Exports_1789.png"><img class="alignnone size-full wp-image-914" src="https://toflit18.hypotheses.org/files/2021/06/Valeurs_résumées_VS_Valeurs_non_résumées_par_partenaire_et_par_produit_Exports_1789.png" alt="" width="1320" height="960" /></a>
+<a href="https://toflit18.hypotheses.org/files/2021/06/Valeurs_résumées_VS_Valeurs_non_résumées_par_partenaire_et_par_produit_Exports_1789.png"><img class="alignnone size-full wp-image-914" src="https://toflit18.hypotheses.org/files/2021/06/Valeurs_résumées_VS_Valeurs_non_résumées_par_partenaire_et_par_produit_Exports_1789.png" alt="" width="1320" height="960"></a>
 
 Ces graphiques montrent que les différences importantes sont regroupées sur un nombre de produits x pays limités. Il y a trop de points sur le graphique pour qu’ils soient identifiables.
 <h3><a id="classement-des-produits-par-partenaire-les-moins-fiables" href="#classement-des-produits-par-partenaire-les-moins-fiables">Classement des produits par partenaire les moins fiables</a></h3>
 À présent nous calculons la différence entre les valeurs des produits par partenaire commercial provenant du « Résumé » et des sources "Autres". Puis nous établissons un classement des produits par partenaire commercial pour lesquels la différence de valeurs entre les deux sources est la plus élevée. Il y a deux manières d’aborder ces différences : soit en terme de points de log (c’est à dire en termes relatifs), soit en terme de valeur absolue de la différence.
 <h4><a id="classement-des-10-produits-par-partenaire-commercial-pour-lesquels-la-différence-des-log-des-valeurs-en-va-entre-les-deux-sources-est-la-plus-importante" href="#classement-des-10-produits-par-partenaire-commercial-pour-lesquels-la-différence-des-log-des-valeurs-en-va-entre-les-deux-sources-est-la-plus-importante">Classement des 10 produits par partenaire commercial pour lesquels la différence des log des valeurs entre les deux sources est la plus importante</a></h4>
-<pre><code><span style="font-size: 6pt;">
+<pre><code><span style="font-size: 6pt">
 
 
 
@@ -122,7 +122,7 @@ Ces graphiques montrent que les différences importantes sont regroupées sur un
 
 </span></code></pre>
 <h4><a id="classement-des-10-produits-par-partenaire-commercial-pour-lesquels-la-différence-des-valeurs-en-va-entre-les-deux-sources-est-la-plus-importante" href="#classement-des-10-produits-par-partenaire-commercial-pour-lesquels-la-différence-des-valeurs-en-va-entre-les-deux-sources-est-la-plus-importante">Classement des 10 produits par partenaire commercial pour lesquels la différence des valeurs entre les deux sources est la plus importante</a></h4>
-<pre><code><span style="font-size: 6pt;">
+<pre><code><span style="font-size: 6pt">
 
        Code   Produit          Partenaire        X_ou_M      diff_value   Diff_log  
   1.      2   Matières bru..   Levant et Ba..   Imports   10,714,049.00       0.57  
